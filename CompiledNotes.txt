@@ -1,0 +1,151 @@
+WORLD WIDE WEB
+
+- invented by sir Tim Berners-Lee (1989)
+	-He wrote the first browser Computer Program in 1990 while employed at CERN in Switzerland.
+- collection of web resources
+- it is an application to access web sources
+- is an information space where documents and other web resources are 
+  identified by Uniform Source Locators (URLs), interlinked by hypertext links, and can be accessed via the internet.
+- The web began as information project at CERN
+- universe of network
+- The web is easy for anyone to roam, browse and contribute.
+- The web is basically a system of Internet servers that support specially 
+  formatted documents. The formatted documents in a markup language called HTML that supports links to other documents, as well as graphics, audio and video files.
+
+2 types of web resources
+
+1.	Static -  already exist
+2.	Dynamic – produced on the fly
+Spider – application that crawls the web
+
+Application
+
+1. Web Servers – performs the tack of storing 
+2. Clients 
+
+
+Internet network 
+ – interconnection
+Fiddler
+ - web debugging proxy
+FTP
+ - File Transfer Protocol
+TCP
+ - Transmission Control Protocol
+IP 
+ - Internet Protocol
+TLS
+ - Transport Layer Protocol
+SSL
+ - Security Socket Layer
+URL
+ - Unifom Resource Identifier
+IANA 
+ - Internet Assigned Numbers Audthority
+ICANN
+ - Internet Corporation for Assigned NAmes and Numbers
+MIME
+ - Multi Media Internet Mail Extentions
+
+
+HTTP(Hypertext Transfer Protocol)
+ -used to access resources on the www
+ -developed by W3C(World Wide Consortium) and the IETF(Internet Engineering Task Force)
+
+History:
+-HTTP 0.9 (1991)
+-HTTP 1.0 (RFC 1945)
+-HTTP 1.1 (RFC 2068 January 1997),(RFC 2616 June 1999), (RFC 7230-7235 June 2014)
+
+Other Functionalities of HTTP:
+
+1. Content Negotiation
+2. Request multiplexing
+3. Authentication / Authorization
+4. cache Control
+5. Content / Transfer Codings
+6. Language and Character set Specification
+7. Content Media Type
+
+HTTP Request Methods
+
+Get
+ - a request from the server the retrieval of the source identified.
+
+Head
+ - retrieves only the data
+
+Post
+ - used to submit the html form data.
+
+Put
+ - Create/Replace the state of the target resource with the state.
+
+Delete
+ - Requests the server to delete the resource
+
+Option
+ - allows the client to determine the options / requirements associated with a resource.
+
+Trace
+ - Tracks if what the client has recieved.
+
+Connect
+ - used for tunneling proxy servers. 
+
+
+
+HTTP Status Codes
+
+Information(1xx)
+	-100 Continue
+	-101 Switching Protocol
+
+Success(2xx)
+	-200 Ok
+	-201 Create
+	-202 Accepted
+	-203 Non-Authoritative Information
+	-204 No Content
+	-205 Reset Content
+	-206 Partial Content
+
+Redirection(3xx)
+	-300 Multiple Choices
+	-301 Moved Permanently
+	-302 Found
+	-303 See Other
+	-304 Not Modified
+	-305 Use Proxy
+	-306 (unused)
+	-307 Temporary Redirect
+
+Client Error(4xx)
+	-400 Bad Request
+	-401 Unauthorized
+	-402 Payment Required
+	-403 Forbidden
+	-404 Not Found
+	-405 Method Not Allowed
+	-406 Not Accepted
+	-407 Proxy Authentication Required
+	-408 Request Time-out
+	-409 Conflict
+	-410 Gone
+	-411 Length Required
+	-412 Precondition Failed
+	-413 Request Entity Too Large
+	-414 Request-URI Too Large
+	-415 Unsupported Media Type
+	-416 Requested Range Not Satisfiable
+	-417 Expectation Failed
+	-426 Upgrade Required
+
+
+Server Error(5xx)
+	-500 Internal Server Error
+	-501 Not Implemented
+	-502 Bad Gateway
+	-503 Service Unavailable
+	-504 Gateway Time-out
+	-505 HTTP Version Not Supported
