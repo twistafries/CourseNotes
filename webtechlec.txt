@@ -1,13 +1,11 @@
 WORLD WIDE WEB
--	The World Wide Web (WWW) or the web is an information space where documents and other web resources 
-	are identified by Uniform Source Locators (URLs), interlinked by hypertext links, and can be 
-	accessed via the internet.
--	The web began as information project at CERN
+-	The World Wide Web (WWW) is an information space where documents and other web resources 
+	are identified by Uniform Source Locators (URLs) and interlinked by hypertext links
+-	The web can be accessed via the internet.
+-	The web was began as information project at CERN
 -	World wide web is the universe of network
--	The web is easy for anyone to roam, browse and contribute.
--	The web is basically a system of Internet servers that support specially formatted documents,
-	The formatted documents in a markup language called HTML that supports links to other documents, 
-	as well as graphics, audio and video files.
+-	The web is easy to roam, browse and contribute.
+-	The web is basically a system of Internet servers that support specially formatted documents.
 
 Tim Berners – Lee  
 -	Invented the World Wide Web in 1989
@@ -22,4 +20,59 @@ Application:
 2.	Web client
 Internet network – interconnection
 
+HYPERTEXT TRANSFER PROTOCOL
+-	Used to access resources (hypertext/hypermedia) on the World Wide Web
+-	Invented by Tim Berners – lee at CERN in 1989
+-	Jointly developed by the W3C and the IETF 
+-	Version history: 
+		-HTTP 0.9 (1991)
+		-HTTP 1.0 (RFC 1945 may 1996)
+		-HTTP 1.1 (RFC 2068 Jan 1997 June 1999), RFC 7230 – 7235
+		-HTTP 2 (RFC 7540 May 2015)
+
+HTTP FUNDAMENTALS
+-	HTTP is based on client – server architecture
+	Servers:
+		-Proxy servers, gateways, tunnels
+	Clients, a.k.a. user agents (UA):
+		-Web browsers, web crawlers/spiders, other end user tools and applications
+	HTTP uses a request
+		-The client sends an HTTP request message to the server
+		-The server processes the request and replies with an HTTP response message.
+	HTTP provides support for other functionalities such as:
+		-Cache
+		-Content media type (MIME) specification
+		-Language and character set specification
+HTTP REQUEST METHOD
+	STANDARD METHOD
+		GET 
+		HEAD
+		POST
+			-Query 
+			-Path 
+			-Fragment identifier
+		PUT
+		DELETE
+		OPTIONS
+		TRACE
+		CONNECT 
+
+	METHOD PROPERTIES
+		Safe Method 
+		Idempotent method 
+		Cacheable method
+
+
+HTTP MESSAGE HEADERS
+	General Header Fields
+	Request Header Fields
+	Response Header Fields
+	Entity Header Fields
+
+HTTP STATUS CODES
+	Information (1xx)
+	Success (2xx)
+	Redirection (3xx)
+•	Client Error (4xx)
+•	Server Error (5xx)
 		
