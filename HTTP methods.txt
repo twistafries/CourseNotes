@@ -1,0 +1,29 @@
+HTTP Methods
+
+	-Method
+		-Get,Head,Post,Put,Delete,Options,Connect,Trace
+
+	-Safe methods - read only
+		
+		-Get
+		-Head
+		-Options
+		-Trace
+
+	-Idempotent methods - Expected effect will be the same of a request
+		
+		-Get
+		-Head
+		-Options
+		-Trace
+		-Delete
+		-Put
+
+	-Cacheable methods - A method is allowed to be stored for future use
+		
+		-Get
+		-Head
+		-Post
+
+	
+	
