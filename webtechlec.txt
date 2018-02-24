@@ -128,4 +128,19 @@ Entity Header Fields
  Content-type 
  Expires 
  Last Modified
- 		
+ 
+Method Properties
+
+Safe Methods - can only be opened or viewed. 
+	Get
+	Head
+	Option
+	Trace
+
+Idempotent Methods - It can be called multiple times but the result is still the same. 
+	Get
+	Head
+	Put
+	Delete
+	Option
+	Trace
