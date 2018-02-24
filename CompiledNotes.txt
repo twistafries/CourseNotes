@@ -2,6 +2,8 @@
 
 - invented by sir Tim Berners-Lee (1989)
 	-He wrote the first browser Computer Program in 1990 while employed at CERN in Switzerland.
+	-Father of the Web
+
 - collection of web resources
 - it is an application to access web sources
 - is an information space where documents and other web resources are 
@@ -23,6 +25,13 @@ Application
 1. Web Servers – performs the tack of storing 
 2. Clients 
 
+
+What is Internet?
+- Internet   is a global interconnected network of computing devices that uses the standard Internet Protocol Suite to serve the billions of users worldwide.
+
+- It is a network of networks that consists of millions of private, public, academic, business and government networks of local to global scope that are linked by a broad array of electronic and wireless technologies.
+
+Vinton Cerf  - Father of the internet
 
 Internet network 
  – interconnection
@@ -82,37 +91,48 @@ Other Functionalities of HTTP:
 6. Language and Character set Specification
 7. Content Media Type
 
+
+HEADER FIELDS
+- Header fields provide required information about the request or response, or about the object sent in the message body.
+
+General-header: have general applicability for both request and response messages.
+Request-header: These header fields have applicability only for request messages.
+Response-header: These header fields have applicability only for response messages.
+Entity-header: These header fields define meta information about the entity-body or, if no body is present, about the resource identified by the request.
+
+
 HTTP Request Methods
 
 Get
  - a request from the server the retrieval of the source identified.
 
 Head
- - retrieves only the data
+ - Head method is the same as Get method except that the server must not return a message-body in response
 
 Post
- - used to submit the html form data.
+ - used to submit the html form data. Notify the user for what to be re-submitted. Cannot be cached, bookmarked and data will not going to display in URL. Send data to the server.
 
 Put
- - Create/Replace the state of the target resource with the state.
+ - an upload a representational for specific URI. Accepts the body of request and store it in the resource URI. Overwriting for what is being in the URI. Replaces the current presentations with the upload content.
 
 Delete
- - Requests the server to delete the resource
+ - Requests the server to delete the specific resource
 
 Option
  - allows the client to determine the options / requirements associated with a resource.
 
 Trace
- - Tracks if what the client has recieved.
+ - Use for debugging and replies back the input to the user. Performs a message by looping to the target resource.
 
 Connect
- - used for tunneling proxy servers. 
+ - used for tunneling proxy servers by a giver URI. 
 
 
- -Method
+ Method Properties
+
 	-Get,Head,Post,Put,Delete,Options,Connect,Trace
 
- -Safe methods - read only
+ -Safe methods - open and read only
 		
 	-Get
 	-Head
@@ -137,12 +157,15 @@ Connect
 
 
 HTTP Status Codes
+		- 3-digit integer where first digit of the Status-Code defines the class of response and the last two digits do not have any categorization role.
 
   -Information(1xx)
+    -request was received and the process is continuing
 	-100 Continue
 	-101 Switching Protocol
 
   -Success(2xx)
+ 	-action was successfully received, understood, and accepted
 	-200 Ok
 	-201 Create
 	-202 Accepted
@@ -152,6 +175,7 @@ HTTP Status Codes
 	-206 Partial Content
 
   -Redirection(3xx)
+  	-further action must be taken in order to complete the request
 	-300 Multiple Choices
 	-301 Moved Permanently
 	-302 Found
@@ -162,6 +186,7 @@ HTTP Status Codes
 	-307 Temporary Redirect
 
   -Client Error(4xx)
+  	-request contains incorrect syntax or cannot be fulfilled
 	-400 Bad Request
 	-401 Unauthorized
 	-402 Payment Required
@@ -184,6 +209,7 @@ HTTP Status Codes
 
 
   -Server Error(5xx)
+    -server failed to fulfill an apparently valid request
 	-500 Internal Server Error
 	-501 Not Implemented
 	-502 Bad Gateway
@@ -197,7 +223,7 @@ HTTP Status Codes
  -General Header Fields 
  	Cache-control 
  	Connection 
- 	Date o Pragma 
+ 	Date o Pragma
  	Trailer 
  	Transfer-encoding 
  	Upgrade 
@@ -205,6 +231,7 @@ HTTP Status Codes
  	Warning 
 
  -Request Header Fields 
+ 	- allows the client to pass additional information about the request, and about the client itself, to the server.
  	Accept 
  	Accept-charset 
  	Accept-encoding 
@@ -224,7 +251,9 @@ HTTP Status Codes
  	Referrer 
  	User-Agent 
  
- -Response Header Fields 
+ -Response Header Fields
+ 	- allow the server to pass additional information about the response which cannot be placed in the Status- Line. 
+
  	Accept-Range 
  	Age 
  	E-Tag 
