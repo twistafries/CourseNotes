@@ -73,6 +73,59 @@ HTTP STATUS CODES
 	Information (1xx)
 	Success (2xx)
 	Redirection (3xx)
-•	Client Error (4xx)
-•	Server Error (5xx)
-		
+	Client Error (4xx)
+	Server Error (5xx)
+HTTP Message Headers 
+General Header Fields 
+ Cache-control 
+ Connection 
+ Date o Pragma 
+ Trailer 
+ Transfer-encoding 
+ Upgrade 
+ Via 
+ Warning 
+
+Request Header Fields 
+ Accept 
+ Accept-charset 
+ Accept-encoding 
+ Accept-Language 
+ Authorization 
+ Expect 
+ From 
+ Host 
+ If-Match 
+ If-Modified-Since
+ If-None-Match 
+ If-Range
+ If-Unmodified-Since 
+ Max-forward 
+ Proxy-Authorization 
+ Range 
+ Referrer 
+ User-Agent 
+ 
+Response Header Fields 
+ Accept-Range 
+ Age 
+ E-Tag 
+ Location 
+ Proxy-Authenticate 
+ Retry-After 
+ Server 
+ Vary 
+ WWW-Authenticate
+
+Entity Header Fields 
+ Allow 
+ Content-encoding 
+ Content-language  
+ Content-length 
+ Content-location 
+ Content-MD5 
+ Content-range 
+ Content-type 
+ Expires 
+ Last Modified
+ 		
