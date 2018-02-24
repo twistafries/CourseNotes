@@ -18,7 +18,7 @@
 
 1.	Static -  already exist
 2.	Dynamic – produced on the fly
-Spider – application that crawls the web
+
 
 Application
 
@@ -32,30 +32,6 @@ What is Internet?
 - It is a network of networks that consists of millions of private, public, academic, business and government networks of local to global scope that are linked by a broad array of electronic and wireless technologies.
 
 Vinton Cerf  - Father of the internet
-
-Internet network 
- – interconnection
-Fiddler
- - web debugging proxy
-FTP
- - File Transfer Protocol
-TCP
- - Transmission Control Protocol
-IP 
- - Internet Protocol
-TLS
- - Transport Layer Protocol
-SSL
- - Security Socket Layer
-URL
- - Unifom Resource Identifier
-IANA 
- - Internet Assigned Numbers Audthority
-ICANN
- - Internet Corporation for Assigned NAmes and Numbers
-MIME
- - Multi Media Internet Mail Extentions
-
 
 HTTP(Hypertext Transfer Protocol)
  -used to access resources on the www
@@ -81,7 +57,7 @@ HTTP FUNDAMENTALS
 		-Content media type (MIME) specification
 		-Language and character set specification
 
-Other Functionalities of HTTP:
+Functionalities of HTTP:
 
 1. Content Negotiation
 2. Request multiplexing
@@ -90,16 +66,6 @@ Other Functionalities of HTTP:
 5. Content / Transfer Codings
 6. Language and Character set Specification
 7. Content Media Type
-
-
-HEADER FIELDS
-- Header fields provide required information about the request or response, or about the object sent in the message body.
-
-General-header: have general applicability for both request and response messages.
-Request-header: These header fields have applicability only for request messages.
-Response-header: These header fields have applicability only for response messages.
-Entity-header: These header fields define meta information about the entity-body or, if no body is present, about the resource identified by the request.
-
 
 HTTP Request Methods
 
@@ -130,17 +96,15 @@ Connect
 
  Method Properties
 
-	-Get,Head,Post,Put,Delete,Options,Connect,Trace
-
- -Safe methods - open and read only
-		
+ -Safe methods 
+ 	-open and read only	
 	-Get
 	-Head
 	-Options
 	-Trace
 
- -Idempotent methods - Expected effect will be the same of a request
-		
+ -Idempotent methods
+ 	- Expected effect will be the same of a request
 	-Get
 	-Head
 	-Options
@@ -148,8 +112,8 @@ Connect
 	-Delete
 	-Put
 
- -Cacheable methods - A method is allowed to be stored for future use
-		
+ -Cacheable methods 
+ 	- A method is allowed to be stored for future use
 	-Get
 	-Head
 	-Post
@@ -157,7 +121,7 @@ Connect
 
 
 HTTP Status Codes
-		- 3-digit integer where first digit of the Status-Code defines the class of response and the last two digits do not have any categorization role.
+	- 3-digit integer where first digit of the Status-Code defines the class of response and the last two digits do not have any categorization role.
 
   -Information(1xx)
     -request was received and the process is continuing
@@ -220,7 +184,11 @@ HTTP Status Codes
 
  HTTP MESSAGE HEADERS
 
- -General Header Fields 
+HEADER FIELDS
+- Header fields provide required information about the request or response, or about the object sent in the message body.
+
+ -General Header Fields
+ 	Have general applicability for both request and response messages.
  	Cache-control 
  	Connection 
  	Date o Pragma
@@ -265,6 +233,7 @@ HTTP Status Codes
  	WWW-Authenticate
 
  -Entity Header Fields 
+ 	these header fields define meta information about the entity-body or, if no body is present, about the resource identified by the request.
  	Allow 
  	Content-encoding 
  	Content-language  
@@ -275,3 +244,28 @@ HTTP Status Codes
  	Content-type 
  	Expires 
  	Last Modified
+
+Spider 
+ – application that crawls the web
+Internet network 
+ – interconnection
+Fiddler
+ - web debugging proxy
+FTP
+ - File Transfer Protocol
+TCP
+ - Transmission Control Protocol
+IP 
+ - Internet Protocol
+TLS
+ - Transport Layer Protocol
+SSL
+ - Security Socket Layer
+URL
+ - Unifom Resource Identifier
+IANA 
+ - Internet Assigned Numbers Audthority
+ICANN
+ - Internet Corporation for Assigned NAmes and Numbers
+MIME
+ - Multi Media Internet Mail Extentions
