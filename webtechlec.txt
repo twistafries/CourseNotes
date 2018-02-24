@@ -1,0 +1,25 @@
+WORLD WIDE WEB
+-	The World Wide Web (WWW) or the web is an information space where documents and other web resources 
+	are identified by Uniform Source Locators (URLs), interlinked by hypertext links, and can be 
+	accessed via the internet.
+-	The web began as information project at CERN
+-	World wide web is the universe of network
+-	The web is easy for anyone to roam, browse and contribute.
+-	The web is basically a system of Internet servers that support specially formatted documents,
+	The formatted documents in a markup language called HTML that supports links to other documents, 
+	as well as graphics, audio and video files.
+
+Tim Berners – Lee  
+-	Invented the World Wide Web in 1989
+-	He wrote the first browser Computer Program in 1990 while employed at CERN in Switzerland.
+
+2 types of web resources
+1.	Static -  already exist
+2.	Dynamic – produced on the fly
+Spider – application that crawls the web
+Application:
+1.	Web server – performs the tack of storing 
+2.	Web client
+Internet network – interconnection
+
+		
