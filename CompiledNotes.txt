@@ -57,6 +57,21 @@ History:
 -HTTP 1.0 (RFC 1945)
 -HTTP 1.1 (RFC 2068 January 1997),(RFC 2616 June 1999), (RFC 7230-7235 June 2014)
 
+
+HTTP FUNDAMENTALS
+-	HTTP is based on client – server architecture
+	Servers:
+		-Proxy servers, gateways, tunnels
+	Clients, a.k.a. user agents (UA):
+		-Web browsers, web crawlers/spiders, other end user tools and applications
+	HTTP uses a request
+		-The client sends an HTTP request message to the server
+		-The server processes the request and replies with an HTTP response message.
+	HTTP provides support for other functionalities such as:
+		-Cache
+		-Content media type (MIME) specification
+		-Language and character set specification
+
 Other Functionalities of HTTP:
 
 1. Content Negotiation
@@ -94,8 +109,6 @@ Connect
  - used for tunneling proxy servers. 
 
 
-HTTP Methods
-
  -Method
 	-Get,Head,Post,Put,Delete,Options,Connect,Trace
 
@@ -125,11 +138,11 @@ HTTP Methods
 
 HTTP Status Codes
 
-Information(1xx)
+  -Information(1xx)
 	-100 Continue
 	-101 Switching Protocol
 
-Success(2xx)
+  -Success(2xx)
 	-200 Ok
 	-201 Create
 	-202 Accepted
@@ -138,7 +151,7 @@ Success(2xx)
 	-205 Reset Content
 	-206 Partial Content
 
-Redirection(3xx)
+  -Redirection(3xx)
 	-300 Multiple Choices
 	-301 Moved Permanently
 	-302 Found
@@ -148,7 +161,7 @@ Redirection(3xx)
 	-306 (unused)
 	-307 Temporary Redirect
 
-Client Error(4xx)
+  -Client Error(4xx)
 	-400 Bad Request
 	-401 Unauthorized
 	-402 Payment Required
@@ -170,10 +183,66 @@ Client Error(4xx)
 	-426 Upgrade Required
 
 
-Server Error(5xx)
+  -Server Error(5xx)
 	-500 Internal Server Error
 	-501 Not Implemented
 	-502 Bad Gateway
 	-503 Service Unavailable
 	-504 Gateway Time-out
 	-505 HTTP Version Not Supported
+
+
+ HTTP MESSAGE HEADERS
+
+ -General Header Fields 
+ 	Cache-control 
+ 	Connection 
+ 	Date o Pragma 
+ 	Trailer 
+ 	Transfer-encoding 
+ 	Upgrade 
+ 	Via 
+ 	Warning 
+
+ -Request Header Fields 
+ 	Accept 
+ 	Accept-charset 
+ 	Accept-encoding 
+ 	Accept-Language 
+ 	Authorization 
+ 	Expect 
+ 	From 
+ 	Host 
+ 	If-Match 
+ 	If-Modified-Since
+ 	If-None-Match 
+ 	If-Range
+ 	If-Unmodified-Since 
+ 	Max-forward 
+ 	Proxy-Authorization 
+ 	Range 
+ 	Referrer 
+ 	User-Agent 
+ 
+ -Response Header Fields 
+ 	Accept-Range 
+ 	Age 
+ 	E-Tag 
+ 	Location 
+ 	Proxy-Authenticate 
+ 	Retry-After 
+ 	Server 
+ 	Vary 
+ 	WWW-Authenticate
+
+ -Entity Header Fields 
+ 	Allow 
+ 	Content-encoding 
+ 	Content-language  
+ 	Content-length 
+ 	Content-location 
+ 	Content-MD5 
+ 	Content-range 
+ 	Content-type 
+ 	Expires 
+ 	Last Modified
