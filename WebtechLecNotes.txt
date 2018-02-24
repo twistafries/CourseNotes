@@ -1,0 +1,106 @@
+What is HTTP?
+The HyperText Transfer Protocol (HTTP)   is a set of rules for transferring files like graphics,text sound and many more on the WWW. This is the foundation for data communication for the World Wide Web since 1990.
+
+What is WWW?
+World Wide Web   is the way to access information over the medium of internet. The world web is mistakenly used as a synonym for the internet itself. Web is a service that operates over the internet.
+
+Tim-Berners Lee   - Father of the Web
+
+What is Internet?
+- Internet   is a global interconnected network of computing devices that uses the standard Internet Protocol Suite to serve the billions of users worldwide.
+
+- It is a network of networks that consists of millions of private, public, academic, business and government networks of local to global scope that are linked by a broad array of electronic and wireless technologies.
+
+Vinton Cerf  - Father of the internet
+
+HEADER FIELDS
+- Header fields provide required information about the request or response, or about the object sent in the message body.
+
+General-header: have general applicability for both request and response messages.
+Request-header: These header fields have applicability only for request messages.
+Response-header: These header fields have applicability only for response messages.
+Entity-header: These header fields define meta information about the entity-body or, if no body is present, about the resource identified by the request.
+
+REQUEST METHODS
+
+Get - Get method means retrieve whatever information is identified by the request-URI
+Head - Head method is the same as Get method except that the server must not return a message-body in response
+Post - Submit the data and process to a resource. Notify the user for what to be re-submitted. Cannot be cached, bookmarked and data will not going to display in URL. Send data to the server.
+Put - Can upload a representational for specific URI. Accepts the body of request and store it in the resource URI. Overwriting for what is being in the URI. Replaces the current presentations with the upload content.
+Delete - Delete the specific resource
+Trace - Use for debugging and replies back the input to the user. Performs a message by looping to the target resource.
+Options - Specify the communication options for the resource.
+Connect - Makes a tunnel to the server by a given URI.
+
+REQUEST HEADER FIELDS
+- allows the client to pass additional information about the request, and about the client itself, to the server.
+
+Accept Charset
+Accept Encoding
+Accept Language
+Authorization
+Expect
+From
+Host
+If-Match
+If-None-Match
+If-Range
+If-Unmodified-Since
+Max-forward
+Proxy-Authorization
+Range
+Referrer
+User-Agent
+
+RESPONSE HEADER FIELDS
+- allow the server to pass additional information about the response which cannot be placed in the Status- Line.
+
+Accept Ranges
+Age
+ETag
+Proxy Authenticate
+Retry After
+Server
+Vary
+WWW-Authenticate
+
+GENERAL HEADER FIELDS
+Cache-Control
+Connection
+Date
+Pragma
+Transfer-encoding
+Trailer
+Upgrade
+Via
+Warning
+
+ENTITY HEADER FIELDS
+Allow
+Content-encoding
+Content-language
+Status line
+HTTP protocol version
+Status COde
+Reason Phrase
+Response Headers
+Empty line
+Message body
+
+STATUS CODES
+- 3-digit integer where first digit of the Status-Code defines the class of response and the last two digits do not have any categorization role.
+
+1XX
+request was received and the process is continuing
+
+2XX
+action was successfully received, understood, and accepted
+
+3XX
+further action must be taken in order to complete the request
+
+4XX
+request contains incorrect syntax or cannot be fulfilled
+
+5XX
+server failed to fulfill an apparently valid request
