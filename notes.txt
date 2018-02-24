@@ -1,0 +1,75 @@
+www
+- invented by sir Tim Berners-Lee(1989)
+- collection of web resources
+- it is an application to access web sources
+
+Application
+1. Web Servers
+2. Clients
+
+Fiddler
+ - web debugging proxy
+FTP
+ - File Transfer Protocol
+TCP
+ - Transmission Control Protocol
+IP 
+ - Internet Protocol
+TLS
+ - Transport Layer Protocol
+SSL
+ - Security Socket Layer
+URL
+ - Unifom Resource Identifier
+IANA 
+ - Internet Assigned Numbers Audthority
+ICANN
+ - Internet Corporation for Assigned NAmes and Numbers
+MIME
+ - Multi Media Internet Mail Extentions
+
+
+HTTP(Hypertext Transfer Protocol)
+ -used to access resources on the www
+ -developed by W3C(World Wide Consortium) and the IETF(Internet Engineering Task Force)
+
+History:
+-HTTP 0.9 (1991)
+-HTTP 1.0 (RFC 1945)
+-HTTP 1.1 (RFC 2068 January 1997),(RFC 2616 June 1999), (RFC 7230-7235 June 2014)
+
+Other Functionalities of HTTP:
+
+1. Content Negotiation
+2. Request multiplexing
+3. Authentication / Authorization
+4. cache Control
+5. Content / Transfer Codings
+6. Language and Character set Specification
+7. Content Media Type
+
+HTTP Request Methods
+
+Get
+ - a request from the server the retrieval of the source identified.
+
+Head
+ - retrieves only the data
+
+Post
+ - used to submit the html form data.
+
+Put
+ - Create/Replace the state of the target resource with the state.
+
+Delete
+ - Requests the server to delete the resource
+
+Option
+ - allows the client to determine the options / requirements associated with a resource.
+
+Trace
+ - Tracks if what the client has recieved.
+
+Connect
+ - used for tunneling proxy servers. 
