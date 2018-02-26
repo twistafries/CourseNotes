@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTTP</title>
+	</head>
+	<body>
+		<h1> HTTP </h1>
+		<ul>
+			<li>
+				<h2>History</h2>
+					<ul>
+						<li>HTTP 0.9 (1991)</li>
+						<li>HTTP 1.0 (RFC 1945)</li>
+						<li>HTTP 1.1 
+							<ul>
+								<li>(RFC 2068 Jan. 1997)</li>
+								<li>(RFC 2616 Jun. 1999)</li>
+								<li>(RFC 7230-7235 Jun. 2014)</li>
+							</ul>
+						</li>
+					</ul>
+			</li>
+
+			<li>
+				<h2>HTTP Fundamentals</h2>
+				<ul>
+				<li>HTTP is based on client – server architecture</li>
+				<li>Servers:
+					<ul>
+						<li>
+						-Proxy servers, gateways, tunnels
+						</li>
+					</ul>
+				</li>
+				<li>Clients, a.k.a. user agents (UA):
+					-Web browsers, web crawlers/spiders, other end user tools and applications
+				</li>
+				<li>
+				HTTP uses a request
+					<ul>
+						<li>
+						-The client sends an HTTP request message to the server
+						</li>
+						<li>
+						-The server processes the request and replies with an HTTP response message.
+						</li>
+					</ul>
+				</li>
+				<li>
+				HTTP provides support for other functionalities such as:
+					<ul>
+						<li>
+						-Cache
+						</li>
+						<li>
+						-Content media type (MIME) specification
+						</li>
+						<li>
+						-Language and character set specification
+						</li>
+					</ul>
+				</li>
+				</ul>
+			</li>
+
+			<li>
+				<h2>Functionalities of HTTP</h2>
+				<ol>
+					<li>Content Negotiation</li>
+					<li>Request Multiplexing</li>
+					<li>Authentication and Authorization</lo>
+					<li>Cache Control</li>
+					<li>Content/Transfer Coding</li>
+					<li>Language and Character Set Specification</li>
+					<li>Content Media Type</li>
+				</ol>
+			</li>
+
+			<li>
+				<h2>HTTP Request Methods</h2>
+					<ul>
+						<li>
+							<p>
+							GET - a request to the server to retrieve the resource identified.
+							</p>
+						</li>
+
+						<li>
+							<p>
+							HEAD - similar to get, but the server must not return a message-body in response
+							</p>
+						</li>
+
+						<li>
+							<p>
+							POST - sent to submit html form data to the server. Content is not cached. 
+								(A notification to resubmit form data is often seen when a form is filled and then the page is refreshed or reloaded.)
+							</p>
+						</li>
+
+						<li>
+							<p>
+							PUT - uploads representation of URI
+							</p>
+						</li>
+
+						<li>
+							<p>
+							DELETE - delete the listed or specified resource or item
+							</p>
+						</li>
+
+						<li>
+							<p>
+							OPTION - returns supported HTTP methods by the server
+							</p>
+						</li>
+
+						<li>
+							<p>
+							TRACE - for debugging. Similar to ping for IP, sends a looping message from sender to target source.
+							</p>
+						</li>
+
+						<li>
+							<p>
+							CONNECT - converts requested connection to a TCP/IP tunnel
+							</p>
+						</li>
+
+					</ul>
+			</li>
+
+			<li>
+				<h2>Method Properties</h2>
+				<ul>
+				<li>
+					<p>Safe methods
+					<ul>
+						<li>open and read only</li>
+						<li>GET, HEAD, OPTIONS, TRACE </li>
+					</ul>
+					</p>
+				</li>
+
+				<li>
+					<p>Idempotent methods
+					<ul>
+						<li>Expected effect will be the same as that of a request</li>
+						<li>GET, HEAD, OPTIONS, TRACE, DELETE, PUT</li>
+					</ul>
+					</p>
+				</li>
+
+				<li>
+					<p>Cacheable methods
+					<ul>
+						<li>A method with results that can be stored and reused later</li>
+						<li>GET, HEAD, POST</li>
+					</ul>
+					</p>
+				</li>
+
+				</ul>
+			</li>
+
+			<li>
+				<h2>HTTP Status Codes</h2>
+				<ul>
+				<li>
+				Information(1xx)
+					<ul><li>-request was received and the process is continuing</li>
+						<li>-100 Continue</li>
+						<li>-101 Switching Protocol</li>
+					</ul>
+				</li>
+
+				<li>
+				Success(2xx)
+					<ul><li>-action was successfully received, understood, and accepted</li>
+						<li>200 - OK</li>
+						<li>201 - Create</li>
+						<li>202 - Accepted</li>
+						<li>203 - Non-Authoritative Information</li>
+						<li>204 - No Content</li>
+						<li>205 - Reset Content</li>
+						<li>206 - Partial Content</li>
+					</ul>
+				</li>
+
+				<li>
+				Redirection(3xx)
+					<ul><li>-further action must be taken in order to complete the request</li>
+					<li>300 - Multiple Choices</li>
+					<li>301 - Moved Permanently</li>
+					<li>302 - Found</li>
+					<li>303 - See Other</li>
+					<li>304 - Not Modified</li>
+					<li>305 - Use Proxy</li>
+					<li>306 - (unused)</li>
+					<li>307 - Temporary Redirect</li>
+					</ul>
+				</li>
+
+				<li>
+				Client Error(4xx)
+				<ul><li>-request contains incorrect syntax or cannot be fulfilled</li>
+					<li>400 - Bad Request</li>
+					<li>401 - Unauthorized</li>
+					<li>402 - Payment Required</li>
+					<li>403 - Forbidden</li>
+					<li>404 - Not Found</li>
+					<li>405 - Method Not Allowed</li>
+					<li>406 - Not Accepted</li>
+					<li>407 - Proxy Authentication Required</li>
+					<li>408 - Request Time-out</li>
+					<li>409 - Conflict</li>
+					<li>410 - Gone</li>
+					<li>411 - Length Required</li>
+					<li>412 - Precondition Failed</li>
+					<li>413 - Request Entity Too Large</li>
+					<li>414 - Request-URI Too Large</li>
+					<li>415 - Unsupported Media Type</li>
+					<li>416 - Requested Range Not Satisfiable</li>
+					<li>417 - Expectation Failed</li>
+					<li>426 - Upgrade Required</li>
+				</ul>
+				</li>
+
+				<li>
+				Server Error(5xx)
+				<ul>
+				<li>-server failed to fulfill an apparently valid request</li>
+				<li>500 - Internal Server Error</li>
+				<li>501 - Not Implemented</li>
+				<li>502 - Bad Gateway</li>
+				<li>503 - Service Unavailable</li>
+				<li>504 - Gateway Time-out</li>
+				<li>505 - HTTP Version Not Supported</li>
+				</ul>
+				</li>
+
+				</ul>
+			</li>
+
+			<li>
+			<h2>Header Fields</h2>
+				<ul>
+				<li>
+				General-header
+				<ul>
+					<li>Have general applicability for both request and response messages.</li>
+					<li>Cache-control </li>
+					<li>Connection </li>
+					<li>Date o Pragma</li>
+					<li>Trailer </li>
+					<li>Transfer-encoding</li> 
+					<li>Upgrade </li>
+					<li>Via </li>
+					<li>Warning</li>
+				</ul>
+				</li>
+
+				<li>
+				Request-header
+				<ul>
+					<li>- allows the client to pass additional information about the request, and about the client itself, to the server.</li>
+					<li>Accept </li>
+					<li>Accept-charset </li>
+					<li>Accept-encoding </li>
+					<li>Accept-Language </li>
+					<li>Authorization </li>
+					<li>Expect </li>
+					<li>From </li>
+					<li>Host </li>
+					<li>If-Match </li>
+					<li>If-Modified-Since</li>
+					<li>If-None-Match </li>
+					<li>If-Range</li>
+					<li>If-Unmodified-Since </li>
+					<li>Max-forward </li>
+					<li>Proxy-Authorization </li>
+					<li>Range </li>
+					<li>Referrer </li>
+					<li>User-Agent </li>
+				</ul>
+				</li>
+
+				<li>
+				Response-header
+				<ul>
+					<li>- allow the server to pass additional information about the response which cannot be placed in the Status- Line. </li>
+					<li>Accept-Range </li>
+					<li>Age </li>
+					<li>E-Tag </li>
+					<li>Location </li>
+					<li>Proxy-Authenticate </li>
+					<li>Retry-After </li>
+					<li>Server </li>
+					<li>Vary </li>
+					<li>WWW-Authenticate</li>
+				</ul>
+				</li>
+
+				<li>
+				Entity-header
+				<ul>
+					<li>these header fields define meta information about the entity-body or, if no body is present, about the resource identified by the request.</li>
+					<li>Allow </li>
+					<li>Content-encoding </li>
+					<li>Content-language  </li>
+					<li>Content-length </li>
+					<li>Content-location </li>
+					<li>Content-MD5 </li>
+					<li>Content-range </li>
+					<li>Content-type </li>
+					<li>Expires </li>
+					<li>Last Modified</li>
+				</ul>
+				</li>
+				</ul>
+			</li>
+
+		</ul>
+	<footer>
+		<a href="webrsrc.html"> Web Resources </a> /<a href="../TableOfContents.html">Table of Contents </a> /<a href="term.html"> Terminologies </a>
+	</footer>
+	</body>
+</html>
