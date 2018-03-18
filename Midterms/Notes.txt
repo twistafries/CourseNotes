@@ -2,27 +2,47 @@ CSS
 	--->	Cascading StyleSheet
 	--->	Developed by Hakom Wium Lie and Bert Bos 
 	--->	Used to specify the presentation of structurally marked up documents
+	--->	It is a language used to specify the presentation aspects (eg. layout and formating) of structurally marked up documents.
+	--->	The language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media.
+	--->	Used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML
 
 Version
-	CSS Level 1
-	CSS Level 2
+	CSS Level 1 
+			is a simple style sheet mechanism that allows authors and readers to attach style (e.g. fonts, colors and spacing)
+			to HTML documents. The CSS1 language is human readable and writable, and expresses style in common desktop publishing terminology.
+	
+	CSS Level 2	
+			This specification defines Cascading Style Sheets, level 2 (CSS2). CSS2 is a style sheet language that allows authors and users
+			to attach style (e.g., fonts, spacing, and aural cues) to structured documents (e.g., HTML documents and XML applications). By separating
+			the presentation style of documents from the content of documents, CSS2 simplifies Web authoring and site maintenance.
+	
 	CSS Level 2 Revision
+
 	CSS Level 3
+			is the latest evolution of the Cascading Style Sheets language and aims at extending CSS2.1. It brings a lot of long-awaited novelties,
+			like rounded corners, shadows, gradients, transitions or animations, as well as new layouts like multi-columns, flexible box or grid layouts.
+			Experimental parts are vendor-prefixed and should either be avoided in production environments, or used with extreme caution as both their
+			syntax and semantics can change in the future.
 
 
 HTML STYLESHEET
 	- Sources of styles for HTML Documents
 
 	--> Author styles
+		This refers to the maker of the website who embeds all the styles of a website in CSS files or inline into the html.
+			
 			- External stylesheet
 			- Embedded stylesheet
 			- Inline styles
 	
 	--> Users styles
-			- Some browsers provide alternatives through plugins/extensions
+		-This refers to you or the end-user viewing a website.
+		-You can override the author's styles by defining your own styles or CSS. Typically this is done if you need to have larger font sizes, varying colors, etc. for accessibility reasons.
+		-Some browsers provide alternatives through plugins/extensions
 	
 	--> User agent styles
-			- Sample default user
+		-This style sheet refers to your browser such as Internet Explorer,Chrome,Firefox or any other browser. It has its own default style sheet and has the lowest priority.
+		-Sample default user
 
 
 CSS STATEMENTS
@@ -37,30 +57,43 @@ CSS STATEMENTS
 
  	Simple Selector
 			- Universal selector
+					This uses an asterisk (*) to refer to any type of a particular element.The universal selector matches any element type.
+
 			- Type selector
+					This selects elements of the document by node names.
 			- ID selector
+					This selects elements that match based on id attribute.
 			- Class selectors
+					This selects elements that match based on class attribute.
 			- Attribute selectors
+					Selects elements based on attributes or its values.
 			- Pseudo classes
 	
 	Selector group - comma separated list representing the union
 	
 	Combinators
 			- Descendant combinator
-			- Child combinator (>)
+					Nodes that are children or children of children and so on of specified element are selected.
+			- Child combinator (>
+					Nodes that are children of element specified are selected.
 			- Sibling combinator
 						- General sibling (+)
+								Nodes that follows element specified are selected.	
 						- Adjacent sibling (~)
+								Nodes that immediately follows element specified are selected.
 				
 	Pseudo classes
 		
 		- Dynamic pseudo-class
 		
 				- link pseudo-classes
-					:link, :visited
+					:link - selects hyperlink elements that have href attribute.
+					:visited - links already visited are selected.
 				
 				- user action pseudo classes
-					:hover, :active, :focus
+					:hover - selected as mouse hovers an element.
+					:active - selects elements usually links as they are activated.
+					:focus  - select as an element is focused by keyboard.
 		
 		- Target pseudo-class
 		- Language pseudo-classes
