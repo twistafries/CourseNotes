@@ -1,0 +1,99 @@
+CSS 
+	--->	Cascading StyleSheet
+	--->	Developed by Hakom Wium Lie and Bert Bos 
+	--->	Used to specify the presentation of structurally marked up documents
+
+Version
+	CSS Level 1
+	CSS Level 2
+	CSS Level 2 Revision
+	CSS Level 3
+
+
+HTML STYLESHEET
+	- Sources of styles for HTML Documents
+
+	--> Author styles
+			- External stylesheet
+			- Embedded stylesheet
+			- Inline styles
+	
+	--> Users styles
+			- Some browsers provide alternatives through plugins/extensions
+	
+	--> User agent styles
+			- Sample default user
+
+
+CSS STATEMENTS
+
+	CSS Rules Set
+			- Consist of selector
+			- Declaration block
+			- Property declaration
+
+	Css selectors
+			Selectors - Structure used as a condition
+
+ 	Simple Selector
+			- Universal selector
+			- Type selector
+			- ID selector
+			- Class selectors
+			- Attribute selectors
+			- Pseudo classes
+	
+	Selector group - comma separated list representing the union
+	
+	Combinators
+			- Descendant combinator
+			- Child combinator (>)
+			- Sibling combinator
+						- General sibling (+)
+						- Adjacent sibling (~)
+				
+	Pseudo classes
+		
+		- Dynamic pseudo-class
+		
+				- link pseudo-classes
+					:link, :visited
+				
+				- user action pseudo classes
+					:hover, :active, :focus
+		
+		- Target pseudo-class
+		- Language pseudo-classes
+		
+		- UI element states pseudo classes
+				:enabled , :disabled
+		
+		- Structural pseudo-classes
+				:root 
+
+		-Negation pseudo-class
+				:not()
+
+	Pseudo elements
+		:first-letter
+		:first-line
+		:before
+		:after
+
+
+Origin and Importance
+	
+	- Origin of declaration is base on where it came from 
+	- Importance is whether or not it is declared descending
+
+1. Transition decalarations
+2. Important user agent declarations
+3. Important user declarations
+4. Important override declarations
+5. Important author declarations
+6. Animation declarations
+7. Normal override declarations
+8. Normal author declarations
+9. Normal user declarations
+10. Normal user agent declarations 
+
