@@ -1,0 +1,47 @@
+CSS Selectors
+
+CSS RULE Precedence
+ - an element may be the subject of the selectors of multiple style rules
+ - when such rules target diferent properties their effects cascade
+ - when the styles involve the same property conflict and must be resolved such that only one style is copied.
+
+RESOLUTION 
+ - by origin (author, user, user agent) and importance
+	- a section where it comes from and its importance is whether or not declared
+	1. Transision declarations
+	2. Important user agent declarations
+	3. Important user declarations
+	4. Important override declarations
+	5. Important author declarations
+	6. Animation Declarations
+ - by specifity
+ - by order
+
+Selector Group
+ - comma-separated list of selectors representing
+
+Pseudo-Classes
+ - dynamic pseudo-classes
+ - target pseudo-class
+ - ul element states pseudo-classes
+ - structural pseudo-classes
+ - negation pseudo class
+
+CSS Declarations
+ - properties
+	-shorthand properties
+	   - allows authors to specify the values of several properties with a single property
+		-background, font, margin, padding, border-width
+	-vendor specific extentions(a.k.a vendor prefixes)
+	   - used by browser vendors as a prefix for the names of experimental or non-standard css properties. Lately, vendors are moving away from vendor prefixes in favor of user-controlled flags or preferences
+	    eg. -webkit-
+		-moz-
+		-o-
+		-ms-
+	-custom properties(a.k.a css variables experimental)
+	  - property names prefixed with - , representing a value that can be relesed throughout the document using the var() function
+
+Values
+ - values processing
+	- declared , cascaded
+ - the final values can be either absolute or relative computing
