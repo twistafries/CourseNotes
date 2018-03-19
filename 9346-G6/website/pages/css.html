@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS</title>
+	</head>
+	<body>
+		<h1> CSS </h1>
+		<ul>
+			<li>Cascading StyleSheet</li>
+      <li>Developed by Hakom Wium Lie and Bert Bos</li>
+      <li>Used to specify the presentation of structurally marked up documents</li>
+      <li>It is a language used to specify the presentation aspects (eg. layout and formating) of structurally marked up documents.</li>
+      <li>The language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media.</li>
+      <li>Used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML</li>
+		</ul>
+<h2> CSS Versions </h2>
+			<ul>
+        <li>CSS Level 1 - is a simple style sheet mechanism that allows authors and readers to attach style (e.g. fonts, colors and spacing)
+			to HTML documents. The CSS1 language is human readable and writable, and expresses style in common desktop publishing terminology.</li>
+    </ul>
+     <ul>
+        <li>CSS Level 2	- this specification defines Cascading Style Sheets, level 2 (CSS2). CSS2 is a style sheet language that allows authors and users
+			to attach style (e.g., fonts, spacing, and aural cues) to structured documents (e.g., HTML documents and XML applications). By separating
+			the presentation style of documents from the content of documents, CSS2 simplifies Web authoring and site maintenance.</li>
+    </ul>
+    <ul>
+        <li>CSS Level 2 Revision</li>
+    </ul>
+    
+    <ul>
+        <li>CSS Level 3 - is the latest evolution of the Cascading Style Sheets language and aims at extending CSS2.1. It brings a lot of long-awaited novelties,
+			like rounded corners, shadows, gradients, transitions or animations, as well as new layouts like multi-columns, flexible box or grid layouts.
+			Experimental parts are vendor-prefixed and should either be avoided in production environments, or used with extreme caution as both their
+			syntax and semantics can change in the future.</li>
+    </ul>
+    
+<h2> HTTP Stylesheets </h2>  
+				<ul>
+				<li> Sources of styles for HTML Documents
+          <ul>
+						<li>
+						 Author styles
+              <ul>
+                <li>
+                 This refers to the maker of the website who embeds all the styles of a website in CSS files or inline into the html.
+                   <ul>
+                    <li> External stylesheet</li>
+                    <li> Embedded stylesheet</li>
+                    <li> Inline styles</li>
+                  </ul>
+                </li>
+              </ul>
+						</li>
+            
+            <li>
+						 Users styles
+              <ul>
+                <li>-This refers to you or the end-user viewing a website.
+                </li>
+                <li>-You can override the author's styles by defining your own styles or CSS. Typically this is done if you need to have larger font sizes, varying colors, etc. for accessibility reasons.
+                </li>
+                <li>-Some browsers provide alternatives through plugins/extensions.
+                </li>
+					    </ul>
+          </li>
+           
+          <li>
+						User agent styles
+              <ul>
+                <li>-This style sheet refers to your browser such as Internet Explorer,Chrome,Firefox or any other browser. It has its own default style sheet and has the lowest priority.
+                </li> 
+                <li>-Sample default user</li>
+            </ul>
+          </li>
+       </ul>
+      </li>
+    </ul>
+            
+<h2> CSS Statements </h2>            
+    <ul>
+				<li>CSS Rules Set
+          <ul>
+            <li>- Consist of selector</li>
+            <li>- Declaration block</li>
+            <li>- Property declaration</li>
+         </ul>
+				</li>
+        
+        <li>CSS Rule Precedence
+          <ul>
+            <li>- an element may be the subject of the selectors of multiple style rules</li>
+            <li>- when such rules target diferent properties their effects cascade</li>
+            <li>- when the styles involve the same property conflict and must be resolved such that only one style is copied.</li>
+         </ul>
+				</li>
+      
+      <li>CSS Resolution
+          <ul>
+            <li>Origin and Importance (author, user, user agent)
+              <ul>
+                <li>- Origin of declaration is base on where it came from. </li>
+                <li>- Importance is whether or not it is declared descending.</li>
+                 <ul>
+                  <li>1. Transition decalarations</li>
+                  <li>2. Important user agent declarations</li>
+                  <li>3. Important user declarations</li>
+                  <li>4. Important override declarations</li>
+                  <li>5. Important author declarations</li>
+                  <li>6. Animation declarations</li>
+                  <li>7. Normal override declarations</li>
+                  <li>8. Normal author declarations</li>
+                  <li>9. Normal user declarations</li>
+                  <li>10. Normal user agent declarations </li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>By specifity</li>
+          </ul>
+          <ul>
+            <li>By order</li>
+          </ul>
+			</li> 
+    </ul>
+    
+    
+    
+<h2> CSS Selectors </h2>
+    <ul>
+      <li>Simple Selectors
+        <ul>
+          <li>Universal selector
+            <ul>
+              <li>This uses an asterisk (*) to refer to any type of a particular element.The universal selector matches any element type.</li>
+            </ul>
+          </li>
+          <li>Type selector
+            <ul>
+              <li>This selects elements of the document by node names.</li>
+            </ul>
+          </li>
+          <li>ID selector
+           <ul>
+              <li>This selects elements that match based on id attribute.</li>
+            </ul> 
+          </li>
+          <li>Class selectors
+            <ul>
+              <li>This selects elements that match based on class attribute.</li>
+            </ul>
+          </li>
+          <li>Attribute selectors
+            <ul>
+              <li>Selects elements based on attributes or its values.</li>
+            </ul>
+          </li>
+          <li>Pseudo classes
+            <ul>
+              <li>Dynamic pseudo-class
+                <ul>
+                  <li>link pseudo-classes
+                    <ul>
+                      <li>link - selects hyperlink elements that have href attribute.</li>
+                      <li>visited - links already visited are selected.</li>
+                    </ul>
+                  </li>
+                  <li>user action pseudo classes
+                    <ul>
+                      <li>hover - selected as mouse hovers an element.</li>
+                      <li>active - selects elements usually links as they are activated.</li>
+                      <li>focus  - select as an element is focused by keyboard.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>Target pseudo-class</li>
+              <li>Language pseudo-classes</li>
+              <li>UI element states pseudo classes
+                <ul>
+                  <li>:enabled , :disabled</li>
+                </ul>
+              </li>
+              <li>Structural pseudo-classes
+                <ul>
+                  <li>:root </li>
+                </ul>
+              </li>
+              <li>Negation pseudo-class
+                <ul>
+                  <li>:not()</li>
+                </ul>
+              </li>
+              <li>Pseudo elements
+                <ul>
+                  <li>first-letter</li>
+                  <li>first-line</li>
+                  <li>before</li>
+                  <li>after</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+		    </ul>
+      </li>
+      
+      <li>Selector group
+        <ul>
+          <li>- comma separated list representing the union</li>
+        </ul>
+      </li>
+      
+      <li>Combinators
+        <ul>
+          <li>Descendant combinator
+            <ul>
+              <li>Nodes that are children or children of children and so on of specified element are selected.</li>
+            </ul>
+          </li>
+          <li>Child combinator
+            <ul>
+              <li>Nodes that are children of element specified are selected.</li>
+            </ul>
+          </li>
+          <li>Sibling combinator
+            <ul>
+              <li>General sibling (+)
+                <ul>
+                  <li>Nodes that follows element specified are selected.</li>
+                </ul>
+              </li>
+              <li>Adjacent sibling (~)
+                <ul>
+                  <li>Nodes that immediately follows element specified are selected.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+		</ul>
+    
+<h2>CSS Declarations</h2>
+    <ul>
+      <li>Properties
+        <ul>
+          <li>shorthand properties
+            <ul>
+              <li> allows authors to specify the values of several properties with a single property</li>
+              <li>background, font, margin, padding, border-width</li>
+            </ul>
+          </li>
+          <li>vendor specific extentions(a.k.a vendor prefixes)
+            <ul>
+              <li>used by browser vendors as a prefix for the names of experimental or non-standard css properties. Lately, vendors are moving away from vendor prefixes in favor of user-controlled flags or preferences (eg. -webkit- , -moz- , -o- ,-ms- )</li>
+            </ul>
+          </li>
+          <li>custom properties(a.k.a css variables experimental)
+            <ul>
+              <li>property names prefixed with - , representing a value that can be relesed throughout the document using the var() function</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      
+      <li>Values
+        <ul>
+          <li>values processing
+            <ul>
+              <li>declared , cascaded</li>
+            </ul>
+          </li>
+          <li>the final values can be either absolute or relative computing</li>
+        </ul>
+      </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+	 <div class =bottom>
+	<footer>
+    
+    <ul>
+					<li>
+					<a href="webrsrc.html">Web Resources </a>
+					</li>
+
+					<li>
+            <a href="../TableOfContents.html">Table of Contents </a>
+					</li>
+
+					<li>
+					<a href="term.html">Terminologies </a>
+      </li>
+    </ul>
+	</footer>
+  </div>
+	</body>
+</html>
