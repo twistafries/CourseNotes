@@ -164,3 +164,12 @@ Values
  - the final values can be either absolute or relative computing
 
 
+
+Javascript
+
+	Javascript Execution Environment
+	
+	- Core Javascript(Ecmascript) Language and API
+	- (Traditional) Browser Object Model(BOM) API(non-standardized)
+		-windows,Navigation,Screen,Location History
+
