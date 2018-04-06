@@ -1,0 +1,37 @@
+*Event Handling
+javascript event propagation
+	-capturing phase-also called trickling phase is an event occur outer, inwards to outwards
+	-bubbling phase-inner to bubble up,  
+Method #2
+	*Handler - non-standard, universal support, not recomended
+		- can register only one handler
+		- remove handler by assigning null value to attribute
+
+
+Method #3 (DOM L2 event registration)
+	Standard, well-supported
+		-can register more than one event handler
+		-can register handlers on the bubble or capture phase
+		-handler can execute once, so it should be unique handler 
+	QuerySelector()
+	AddEventListener()
+	RemoveEventListener()-remove event handler
+	DispatchEvent()- trigger event programmatically
+
+Method #4 (Microsoft-specific, non-standard, IEv6)
+		-can use in a lower application like microsoft
+		-cannot have capture phase only bubbly
+	FireEvent()-trigger event dramatically
+	DetachEvent()-remove event handler
+
+Method 1 may passed explicitly in the call to the handler
+method 2 & 3 may passed implicitly
+
+Event object properties & methods:
+	-Result()
+	-CurrentTarget()
+	-DelegateTarget()
+	-DefaultPrevent()
+	-RelatedTarget()
+	-StopImmediatePropagation()
+	-PropagationStopped()
