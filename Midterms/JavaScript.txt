@@ -47,6 +47,24 @@ JAVASCRIPT
 					Core Javascript Object
 					Object, Number, Boolean, String, Date, Math, Global, RegExp, Error
 					Arrays
+		
+	Event Propagation Order (DOM compliant browsers)
+		
+		-Capturing phase
+		-At target
+		-Bubbling phase
+	
+	=======================================================
+	/*** Creating and Dispatching Events... ***/
+	
+	var clickEvent = new Event('click');
+	var buttin = document querySelector('#button');
+	button.dispatchEvent(clickEvent);
+	
+	var ce = new CustomEvent('pindot');
+	button.addEventListener('pindot', pindotHandler);
+	button.dispatchEvent(ce);
+	=======================================================
 			
 			
 	
