@@ -13,6 +13,27 @@ body {
   padding:0;
 }
 
+.blue-span {
+	color: #4286f4;
+}
+
+.green-span {
+	color: #408000;
+}
+
+.orange-span {
+	color: #e69500;
+}
+
+.gray-span {
+	color: #808080;
+}
+
+.sample-code {
+  background-color: #eff0f1;
+  width: 500px;
+}
+
 a {
   text-decoration: none;
   text-transform: uppercase;
