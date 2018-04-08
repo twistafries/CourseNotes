@@ -1,0 +1,42 @@
+examples:
+
+1) in-line
+<button id='button' onclick='handler()'>
+
+2) 
+<script> 
+	var button = document.getElementById('button');
+	button.onClick = handler;
+	//can only register 1 handler
+</script>
+
+3)
+<script>
+	//first matching element
+	var button = document.querySelector('#button');
+	//bubbling
+	button.addEventListener('click', handler);
+	//capturing
+	button.addEventListener('click', handler, true);
+</script>	
+4) 
+<script>
+	var button = document.getElementById('button');
+	button.attachEvent('onClick', handler);
+	//can attach multiple event handlers, but no catpure phase
+</script>
+
+5)
+//cross-browser, checking which of the functions have support then calling
+<script>
+	var button = document.getElementById('button');
+	//if addEventListener is supported, call the function
+	if(button.addEventListener){
+		button.addEventListener('click', handler);
+	 //MS browser-compatible
+	} else if (button.attachEvent){
+		button.attachEvent('onclick', handler);
+	//else inline
+	} else {
+		button.onclick = handler;
+	}
