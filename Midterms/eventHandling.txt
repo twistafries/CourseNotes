@@ -28,10 +28,12 @@ Method 1 may passed explicitly in the call to the handler
 method 2 & 3 may passed implicitly
 
 Event object properties & methods:
-	-Result()
-	-CurrentTarget()
-	-DelegateTarget()
-	-DefaultPrevent()
-	-RelatedTarget()
-	-StopImmediatePropagation()
-	-PropagationStopped()
+	-bubbles
+	-eventPhase
+	-target (or srcElement (non-standard))
+	-currentTarget
+	-preventDefault()
+	-stopPropagation()
+	-stopImmediatePropagation()
+	
+	-other event-specific information..
