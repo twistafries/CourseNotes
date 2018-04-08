@@ -1,0 +1,204 @@
+User list:
+iKimmy - WILLY, Kim D.
+2165707 - VILORIA, Brendon Bruce J.
+iJohnCarlo - GUIAB, John Carlo M.
+ricamelle - EMETERIO, Ricamelle R.
+Twistafries - FAYPON, Jon Paulo D.
+
+commit 5d70799c5927202ddaa069602a57c53ebed5daa5
+Author: Twistafries <twersterfrehs@gmail.com>
+Date:   Mon Apr 9 05:58:37 2018 +0800
+
+    Sample scripts and formatting for javascript
+
+commit 323bcba6c0c7a3322ec97505d82688fc16f93318
+Author: Twistafries <twersterfrehs@gmail.com>
+Date:   Mon Apr 9 00:52:46 2018 +0800
+
+    Additional notes and example scripts for javascript
+
+commit c1b3c04ddf5dccd741c01d520b216e79e653640c
+Author: iJohnCarlo <2159311@slu.edu.ph>
+Date:   Sun Apr 8 15:08:40 2018 +0800
+
+    Added JavaScript in all web pages
+
+commit 7969e202510ae6fb50c1a02ce59ec026b3521f8c
+Author: iJohnCarlo <2159311@slu.edu.ph>
+Date:   Sun Apr 8 15:07:47 2018 +0800
+
+    Edited stylesheet.css
+
+commit 5d16ada3ebf6461c771537d819d588b49098b713
+Author: iJohnCarlo <2159311@slu.edu.ph>
+Date:   Sun Apr 8 15:07:16 2018 +0800
+
+    Added JavaScript in TOC
+
+commit 1ed1a5d73562dbc560db18a35dd2883ebb85aac4
+Author: iJohnCarlo <2159311@slu.edu.ph>
+Date:   Sun Apr 8 13:35:13 2018 +0800
+
+    Added Method 1
+
+commit 4422c8943c1c7c65f85274d350dacab73c34bbf8
+Author: iJohnCarlo <2159311@slu.edu.ph>
+Date:   Sun Apr 8 13:16:27 2018 +0800
+
+    Edited Event Object Properties and Methods
+
+commit 3aaa71694c2f6bd4bf763a9b178c9b655b1f3626
+Author: iJohnCarlo <2159311@slu.edu.ph>
+Date:   Sun Apr 8 13:02:04 2018 +0800
+
+    Added some to JavaScript.txt
+
+commit e0d8256f93bfcc85ce1c7fabdd04381356ea217f
+Author: ricamelle <2166278@slu.edu.ph>
+Date:   Fri Apr 6 21:51:30 2018 +0800
+
+    Event Handling (April 6, 2018)
+
+commit b7c59a0a7182441fe06c35fe1373341880e779d6
+Author: 2165707 <2165707@slu.edu.ph>
+Date:   Fri Apr 6 20:04:57 2018 +0800
+
+    Added additional notes for javascript
+
+commit 03d281f5cffd85482283536284cbb778b725abe3
+Author: 2165707 <2165707@slu.edu.ph>
+Date:   Thu Apr 5 22:53:12 2018 +0800
+
+    Notes added for javascript
+
+commit 4ae9e63077ad0be9790fe7ca31537c11647966dc
+Author: iJohnCarlo <2159311@slu.edu.ph>
+Date:   Mon Mar 26 17:36:54 2018 +0800
+
+    Removed some lines
+
+commit edc3f00b176e6012d19ef71aa0af703ce2273d30
+Author: iJohnCarlo <2159311@slu.edu.ph>
+Date:   Mon Mar 26 17:34:54 2018 +0800
+
+    Edited css for the website
+
+commit 2824a7213322844546a32641bf6bbcf6ac81d726
+Author: iJohnCarlo <2159311@slu.edu.ph>
+Date:   Mon Mar 26 17:33:28 2018 +0800
+
+    Edited About.html
+
+commit 5e06a52263cef6efd58bb0ba0e2a723a12d2cfea
+Author: iJohnCarlo <2159311@slu.edu.ph>
+Date:   Mon Mar 26 17:33:04 2018 +0800
+
+    css.html
+
+commit 5f32afe3b2975ec971c810840dec23360503eaed
+Author: iJohnCarlo <2159311@slu.edu.ph>
+Date:   Mon Mar 26 17:32:48 2018 +0800
+
+    Edited http.html
+
+commit 36bae62e5b76847e22cd70d0afa793d74e378f88
+Author: iJohnCarlo <2159311@slu.edu.ph>
+Date:   Mon Mar 26 17:32:21 2018 +0800
+
+    Edited term.html
+
+commit ce2effa66bfea79bc98955ff67580a37d41bb510
+Author: iJohnCarlo <2159311@slu.edu.ph>
+Date:   Mon Mar 26 17:32:06 2018 +0800
+
+    Edited webrsrc.html
+
+commit bb11639a09d05c72ce94037f06e8d0f804f20eea
+Author: iJohnCarlo <2159311@slu.edu.ph>
+Date:   Mon Mar 26 17:31:37 2018 +0800
+
+    Edited www.html
+
+commit fd9f989988c2eda348e70852583b2c426b942f55
+Author: iJohnCarlo <2159311@slu.edu.ph>
+Date:   Mon Mar 26 17:31:03 2018 +0800
+
+    Edited TableOfContents.html
+
+commit fd6ce83ed8970c84a8047249e58dd3659f7e9b10
+Author: iJohnCarlo <2159311@slu.edu.ph>
+Date:   Mon Mar 26 17:29:42 2018 +0800
+
+    added images for css
+
+commit 6078cf0768594c913734479fa4a13405cbf31508
+Author: 2165707 <2165707@slu.edu.ph>
+Date:   Mon Mar 26 01:14:42 2018 +0800
+
+    Removed unnecessary space and added css
+
+commit 61561c33d048f0cb459e808c056f3e5fa32814a8
+Author: 2165707 <2165707@slu.edu.ph>
+Date:   Sun Mar 25 22:24:59 2018 +0800
+
+    Added notes: Javascript
+
+commit 638ddfa2fb5f87ae0ec3cca3c6d67556aae4ff19
+Author: iPatricia <2159311@slu.edu.ph>
+Date:   Tue Mar 20 23:55:59 2018 +0800
+
+    Added / on the footer
+
+commit 0b530fe36c10331311916a0be5141c5742fcc98d
+Author: iPatricia <2159311@slu.edu.ph>
+Date:   Tue Mar 20 23:55:20 2018 +0800
+
+    Edited href path
+
+commit 3794934b0e98013eab445debb8a3f7d23b189b60
+Author: iPatricia <2159311@slu.edu.ph>
+Date:   Tue Mar 20 23:54:58 2018 +0800
+
+    Edited href path
+
+commit c634ec7b41088eec46716f133ccdd0ee746e5d4f
+Author: iKimmy <2165830@slu.edu.ph>
+Date:   Mon Mar 19 20:36:25 2018 +0800
+
+    2165830 modified the Table Of Contents
+
+commit 14388416042cb4e19de327aa4c5d06bfdcdb233c
+Author: iKimmy <2165830@slu.edu.ph>
+Date:   Mon Mar 19 20:35:04 2018 +0800
+
+    2165830 added the css.html notes
+
+commit 8254e3343df2ecf4ee32ae2cc8d4fe966748462b
+Author: iKimmy <2165830@slu.edu.ph>
+Date:   Mon Mar 19 20:33:48 2018 +0800
+
+    2165830 added a css file
+
+commit 7eb4bdc1f3a6a7feefd3d88a6ba56fc15659195b
+Author: iKimmy <2165830@slu.edu.ph>
+Date:   Mon Mar 19 18:49:04 2018 +0800
+
+    2165830 added the compiled notes
+
+commit fd808b072111d72da701a628ef892222c49bffab
+Author: iKimmy <2165830@slu.edu.ph>
+Date:   Mon Mar 19 09:35:08 2018 +0800
+
+    2165830 added midtermsnotes
+
+commit 4c347b3b039b757d37e15c49b32e9598540917cf
+Author: 2165707 <2165707@slu.edu.ph>
+Date:   Sun Mar 18 18:38:24 2018 +0800
+
+    Additional notes for midterms
+
+commit 47b1e5a4d3494ba3625e03a967da732e136d739d
+Author: 2165707 <2165707@slu.edu.ph>
+Date:   Sun Mar 18 18:17:42 2018 +0800
+
+    Added notes for Midterms
