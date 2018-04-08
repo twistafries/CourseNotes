@@ -124,6 +124,11 @@
 										<li>Non-standard, universal support, note recomended
 											<ul>
 											<li>Event is registered on a button by using the "onclick" attribute.</li>
+											<li>Example code:
+												<div class="sample-code">
+														&nbsp;&nbsp;&nbsp;&nbsp;&lt;button id='button' onclick='handler()'&gt;</span>
+												</div>
+											</li>
 											</ul>
 										</li>
 									</ul>
@@ -133,7 +138,16 @@
 											<ul>
 												<li>Can register only one handler</li>
 												<li>Remove handler by assigning null value to attribute</li>
-											</ul></li>
+											</ul>
+										</li>
+										<li>
+											<div class="sample-code">
+												<span class="blue-span">&lt;script&gt;</span><br>
+													&nbsp;&nbsp;&nbsp;&nbsp;var button = document.getElementById('button');<br>
+													&nbsp;&nbsp;&nbsp;&nbsp;button.onClick = handler;<br>
+												<span class="blue-span">&lt;/script&gt;</span>
+											</div>
+										</li>
 									</ul>
 								<li>Method 3 (DOM L2 event registration)</li>
 									<ul>
@@ -147,6 +161,18 @@
 										<li>AddEventListener()</li>
 										<li>RemoveEventListener() - remove event handler</li>
 										<li>DispatchEvent()- trigger event programmatically</li>
+										<li>
+											<div class="sample-code">
+												<span class="blue-span">&lt;script&gt;</span><br>
+													&nbsp;&nbsp;&nbsp;&nbsp;<span class='gray-span'>//first matching element</span><br>
+													&nbsp;&nbsp;&nbsp;&nbsp;<span class='orange-span'>var button = document.querySelector('#button');</span><br>
+													&nbsp;&nbsp;&nbsp;&nbsp;<span class='gray-span'>//bubbling</span><br>
+													&nbsp;&nbsp;&nbsp;&nbsp;<span class='orange-span'>button.addEventListener('click', handler);</span><br>
+													&nbsp;&nbsp;&nbsp;&nbsp;<span class='gray-span'>//capturing</span><br>
+													&nbsp;&nbsp;&nbsp;&nbsp;<span class='orange-span'>button.addEventListener('click', handler, true);</span><br>
+												<span class="blue-span">&lt;/script&gt;</span>
+											</div>
+										</li>
 									</ul>
 								<li>Method 4 (Microsoft-specific, non-standard, IEv6)</li>
 									<ul>
@@ -154,6 +180,14 @@
 										<li>Cannot have capture phase only bubbly</li>
 										<li>FireEvent() - trigger event dramatically</li>
 										<li>DetachEvent() - remove event handler</li>
+										<li>
+											<div class="sample-code">
+												<span class="blue-span">&lt;script&gt;</span><br>
+													&nbsp;&nbsp;&nbsp;&nbsp;<span class='orange-span'>var button = document.getElementById('button');</span><br>
+													&nbsp;&nbsp;&nbsp;&nbsp;<span class='orange-span'>button.attachEvent('onClick', handler);</span><br>
+												<span class="blue-span">&lt;/script&gt;</span>
+											</div>
+										</li>
 									</ul>
 							</ul></li>
 						<li>Event Object Properties & Methods
@@ -166,6 +200,30 @@
 								<li>stopPropagation()</li>
 								<li>stopImmediatePropagation()</li>
 								<li>other event-specific information..</li>
+							</ul>
+						</li>
+						
+						<li>Cross-browser Compatibility
+							<ul>
+								<li>
+									<div class="sample-code">
+										<span class="blue-span">&lt;script&gt;</span><br>
+											&nbsp;&nbsp;&nbsp;&nbsp;<span class='orange-span'>var button = document.getElementById('button');</span><br>
+											&nbsp;&nbsp;&nbsp;&nbsp;<span class='orange-span'>button.attachEvent('onClick', handler);</span><br>
+											&nbsp;&nbsp;&nbsp;&nbsp;<span class='orange-span'>var button = document.getElementById('button');</span><br>
+											&nbsp;&nbsp;&nbsp;&nbsp;<span class='gray-span'>//if addEventListener is supported, call the function</span><br>
+											&nbsp;&nbsp;&nbsp;&nbsp;<span class='orange-span'>if(button.addEventListener){</span><br>
+											&nbsp;&nbsp;&nbsp;&nbsp;<span class='orange-span'>button.addEventListener('click', handler);</span><br>
+											&nbsp;&nbsp;&nbsp;&nbsp;<span class='gray-span'>//MS browser-compatible</span><br>
+											&nbsp;&nbsp;&nbsp;&nbsp;<span class='orange-span'>} else if (button.attachEvent){</span><br>
+											&nbsp;&nbsp;&nbsp;&nbsp;<span class='orange-span'>button.attachEvent('onclick', handler);</span><br>
+											&nbsp;&nbsp;&nbsp;&nbsp;<span class='gray-span'>//else inline</span><br>
+											&nbsp;&nbsp;&nbsp;&nbsp;<span class='orange-span'>} else {</span><br>
+											&nbsp;&nbsp;&nbsp;&nbsp;<span class='orange-span'>button.onclick = handler;</span><br>
+											&nbsp;&nbsp;&nbsp;&nbsp;<span class='orange-span'>}</span><br>
+										<span class="blue-span">&lt;/script&gt;</span>
+									</div>
+								</li>
 							</ul>
 						</li>
 					</ul>
