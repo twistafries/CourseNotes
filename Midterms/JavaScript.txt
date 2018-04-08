@@ -5,7 +5,9 @@ JAVASCRIPT
 		-Core JavaScript(EcmaScript) Language and API
 		-(Traditional) Browser Object Model(BOM) API (non-standardized)
 			-window,navigationscreen,location history
-
+		-Keywords:
+			-Defer - The execution of script is deffered. Not executed instantly
+			-Async - It executes the code in parellel.
 	
 	Javascript can be embedded or link
 	
