@@ -1,7 +1,13 @@
 *Event Handling
 javascript event propagation
 	-capturing phase-also called trickling phase is an event occur outer, inwards to outwards
-	-bubbling phase-inner to bubble up,  
+	-bubbling phase-inner to bubble up, 
+
+Method #1 (inline HTML, event attribute)..
+	Non-standard, universal support, note recomended
+		- event is registered on a button by using the "onclick" attribute.
+	
+	
 Method #2
 	*Handler - non-standard, universal support, not recomended
 		- can register only one handler
