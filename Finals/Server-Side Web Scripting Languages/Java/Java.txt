@@ -1,0 +1,27 @@
+Java Servlet
+- programs that is running on the server that handles communication/requests between browser(client) and applications running on the server like database.
+- used for building dynamic web pages.
+- most powerful server-side web scripting language.
+- uses JDBC to access/connect to databse.
+- web page request handling.
+
+Servlet Life Cycle
+init() -> service() -> destroy()
+- init()
+	- servlet is created when the client invokes a URL corresponding to the servlet
+	- called only once when the servlet is created.
+	
+- service()
+	- handles the HTTP request from the client then responds to the client.
+	- checks the request type then call the appropriate method. e.g. GET request then calls doGet method, POST request then calls doPost method, etc.
+	
+- destroy()
+	- called at the end of the cycle.
+	- this lets the servlet close connections like connection to the database, stop background threads, perform cleanup activities, etc.
+	
+Advantages
+- Extremely powerful and flexible.
+- Cross-platform/portable
+
+Disadvanteges
+- Not easy to learn.
