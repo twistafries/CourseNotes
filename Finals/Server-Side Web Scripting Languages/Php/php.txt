@@ -1,0 +1,31 @@
+PHP: hypertext preprocessor(PHP)
+	-originally known as Personal Home Page but it is now a recursive acronym and some they called it 'Perl Killer' 
+		of the server side scripting world.
+	-developed by Rasmus Lerdorf in 1994 who wrote the number if CGI (Common Gateway Interface) a binaries to
+		maintain his personal homepage
+
+	-it is an open source server side scripting language that embedded in HTML 
+	-A tool for making a dynamic content, interactive web pages or used for CGI scripts, it can also create, read, 
+		write and delete a files on the server,can add, delete and modify a data to the database and can encrypt data
+	-it is sufficient enough to run a largest social network and on different platforms and it is also suitable in
+		most servers that we used today like apache, IIS and etc.
+	-PHP was fast and flexible especially its much powerful when it comes to a most well know sites in the world.
+	-using PHP is that the same file can display a FORM and process the reply.
+	- PHP scripts can be invoked at a command prompt using the command-line interpreter for PHP.
+	-php framework is Objec-Oriented Programming language (OOP) methods and tools for extending web app capabilities
+	-there are list of Built-in functions in PHP : array, calender, Error Handling, MySql, network, XML and more.
+	-PHP handles everthing itself
+
+	-the only weakness of php is that it's generally hard to expand the language to add a non-standard funclionalities
+		that isn'thandled by its built-in functions.
+	
+Advantages
+	-when it comes to speed it's relatively fast since it uses much system resources
+	-it's easy to use especially for those who are familiar with C,  it’s very easy for them to learn and create 
+		a website using PHP.
+
+
+Disadvantages
+	-it's not suitable for huge application so it's hard to maintain since its not that modular
+	-for security purposes since it's an open source everyone can view PHP's source code so
+		it can easily hack it to identify bugs in the code
