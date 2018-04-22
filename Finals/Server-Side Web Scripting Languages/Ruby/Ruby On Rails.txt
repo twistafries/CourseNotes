@@ -1,0 +1,69 @@
+RUBY ON RAILS
+
+-Created by David Heinemeier Hansson
+-By product of BASECAMP
+-Open source project
+
+Rails Principle
+	MVC Architecture
+		-Model View Controller Architecture
+			-model
+				Handles the business logic , talk to your data
+			-Controller
+				Control the flow of the application
+			-View
+				Handle the logic of the presentation that the end user sees
+	Convention over Configuration
+		-set of assumption or the best ways to do things
+	DRY Code
+		-DRY code "Dont Repeat Yourself" Concise,consistent code that is essy to maintain
+
+-Object Oriented
+-Easy to learn
+-Used by top websites like twitter/shopify/sondcloud/slideshare/urbandictionary/bloomberg/github
+-Strong community
+-Rapid Development
+-Follows best practices
+
+PREQUISITES
+	-Web basics(browsers,servers,pages)
+		-must know the basics
+	-HTML
+		-it will display on HTML that why it must be learned
+	-SQL
+		-Have a good understanding of sql and its concept
+	-CSS and Javascript
+		- to enhance experience.
+	-Learn ruby
+		- to further understand Ruby on rails you must understand the other language
+		 and it is the fundamental of ruby on rails
+
+ADVANTAGES
+
+	-Consistent structure
+		- have a strong foundation and library
+
+	-Database migrations
+		- allows us to create and edit database column and row
+
+	-Speed of Development
+		- Can easily do prototyping and can be used in rapid development
+
+	-Can easily learned due to its good english word used
+	-It is a multi-paradigm language and Object Oriented
+	-Ruby gem
+		-it is the package manager
+		-extends the core functionality of the framework similar to npm node.js
+	-Maturity & Respected Community
+
+
+
+DISADVANTAGES
+
+	-Performance
+		-rails have a big framework so it makes it slow
+	-Lack of Documentation
+	-On cutting age of development
+
+
+
