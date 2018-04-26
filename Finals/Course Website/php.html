@@ -56,6 +56,25 @@
 					<li>It's not suitable for huge application so it's hard to maintain since its not that modular.</li>
 					<li>For security purposes since it's an open source everyone can view PHP's source code so it can easily hack it to identify bugs in the code.</li>
 				</ul>
+				
+				<div class="sample-code">
+					&lt;!DOCTYPE html><br>
+						<span class="keyword">&lt;html</span> <span class="attribute">lang</span>=<span class="string">"en"</span><span class="keyword">></span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;head></span><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;meta</span> <span class="attribute">charset</span>=<span class="string">"UTF-8"</span>><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;title></span>PHP Demo: Handling Form Data Submission (GET)<span class="keyword">&lt;/title></span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;/head></span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;body></span><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;?php<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$name = $_GET[<span class="string">"yourname"</span>];<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$color = $_GET[<span class="string">"favcolor"</span>];<br><br>
+
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">echo</span> <span class="string">"&lt;h1 style='color:</span> $color'<span class="string">>Hello,</span> $name<span class="string">!&lt;/h1>"</span>;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;/body></span><br>
+					<span class="keyword">&lt;/html></span>
+				</div>
+				
 			</div>
     </section>
 
