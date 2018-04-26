@@ -1,8 +1,8 @@
 Java Servlet
-- programs that is running on the server that handles communication/requests between browser(client) and applications running on the server like database.
+- programs that are running on the server that handles communication/requests between a browser(the "client") and applications running on the server (for example, a database)
 - used for building dynamic web pages.
 - most powerful server-side web scripting language.
-- uses JDBC to access/connect to databse.
+- uses JDBC (Java Database Connectivity) to access/connect to databse.
 - web page request handling.
 
 Servlet Life Cycle
@@ -23,5 +23,5 @@ Advantages
 - Extremely powerful and flexible.
 - Cross-platform/portable
 
-Disadvanteges
+Disadvantages
 - Not easy to learn.
