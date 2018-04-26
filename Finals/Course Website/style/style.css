@@ -1,10 +1,88 @@
-/** GLOBAL **/
+/************************************** GLOBAL **************************************/
 body {
   font: 16px/1.5 Arial, Helvetica,sans-serif;
   margin: 0;
-  background-color:#f4f4f4;
 }
 
-sample-code {
-	
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.sample-code {
+	padding: 10px 15px;
+	background-color: #eee;
+	font: 13px/1.5 "Courier New", Courier, monospace;
+}
+
+.sample-code .keyword {
+	color: #0000e6
+}
+
+.sample-code .string {
+	color: #ce7b00;
+}
+
+/************************************** HEADER **************************************/
+
+
+header {
+	font-family: "Helvetica Neue Custom", Helvetica, Arial, sans-serif;
+	letter-spacing: -1px;
+}
+
+header .sub-header {
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+
+header .header-blue {
+	color: #53b6d0;
+}
+
+header .header-gray {
+	color: #3c3f41;
+}
+
+/************************************** NAV **************************************/
+
+nav {
+  background: #3c3f41;
+  color: #ffffff;
+  min-height: 70px;
+  border-bottom: #53b6d0 3px solid;
+  overflow: auto;
+  margin-bottom: 0;
+}
+
+nav ul {
+  list-style: none;
+	padding: 0;
+}
+
+nav li {
+  display: inline;
+  padding-right: 50px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover{
+  color: #53b6d0;
+}
+
+/************************************** FOOTER **************************************/
+
+footer {
+  background: #3c3f41;
+  color: #ffffff;
+  padding-top: 5px;
+  min-height: 70px;
+  border-top: #53b6d0 3px solid;
+  overflow: auto;
+  margin-bottom: 0;
 }

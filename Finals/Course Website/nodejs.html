@@ -9,48 +9,56 @@
   <body>
 		
     <header>
-			<h1>Server-side Web Scripting</h1>
+			<div class="container">
+				<h1><span class="header-blue">Course</span> <span class="header-gray">Website</span> <span class="sub-header">Server-side Web Scripting</span></h1>
+			</div>
     </header>
 		
     <nav>
-      <ul>
-       	<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-       	<li><a href="java.html">Java</a></li>
-        <li><a href="php.html">PHP</a></li>
-       	<li><a href="nodejs.html">Node.js</a></li>
-        <li><a href="ruby.html">Ruby</a></li>
-    	</ul>
+			<div class="container">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="java.html">Java</a></li>
+					<li><a href="php.html">PHP</a></li>
+					<li><a href="nodejs.html">Node.js</a></li>
+					<li><a href="ruby.html">Ruby</a></li>
+				</ul>
+			</div>
     </nav>
 
     <section class="content">
-			<h2>Node.js</h2>
-			<p>
-				Node js is an open source and cross-platform runtime environment for executing JavaScript code outside of a browser.
-				The client can store data, send emails, push notifications to the server. 
-				It builds highly scalable data and real time backend services. 
-				It is runtime environment for executing JavaScript code. 
-				Node is an asynchronous by default so in a single thread it can handle multiple requests from the client. 
-			<p>
-				For example in a single thread when a requests arrives the thread handles that request, if we query a database this thread doesn't wait for the database to return the results,while the database is executing the query the thread can be used to serve another client.
-			</p>
-			<p>
-				When the database prepares the result it puts a message called an event queue. 
-				The node still monitors the queue in the background so when it finds an event in this queue the thread will process it.
-			</p>
-			<p>
-				The node can serve more clients without the need for more hardware.
-				But node should not be used for CPU intensive applications like a video encoding or an image manipulation service.
-			</p>
-			<p>
-				In these kind of applications we have a lot of calculations that should be done by the CPU. Since node applications are single threaded when performing the calculations to serve one client, other clients have to wait and that's why node should not be used for CPU intensive applications.
-				It should only be used for building data intensive and real time applications. 
-				We build Rest APIs and Backend Application, Real-Time Services (Chat, Games), Blogs, CMS , Social Applications ,Utilities and Tools with Node.js.
-			</p>
+			<div class="container">
+				<h2>Node.js</h2>
+				<p>
+					Node js is an open source and cross-platform runtime environment for executing JavaScript code outside of a browser.
+					The client can store data, send emails, push notifications to the server. 
+					It builds highly scalable data and real time backend services. 
+					It is runtime environment for executing JavaScript code. 
+					Node is an asynchronous by default so in a single thread it can handle multiple requests from the client. 
+				<p>
+					For example in a single thread when a requests arrives the thread handles that request, if we query a database this thread doesn't wait for the database to return the results,while the database is executing the query the thread can be used to serve another client.
+				</p>
+				<p>
+					When the database prepares the result it puts a message called an event queue. 
+					The node still monitors the queue in the background so when it finds an event in this queue the thread will process it.
+				</p>
+				<p>
+					The node can serve more clients without the need for more hardware.
+					But node should not be used for CPU intensive applications like a video encoding or an image manipulation service.
+				</p>
+				<p>
+					In these kind of applications we have a lot of calculations that should be done by the CPU. Since node applications are single threaded when performing the calculations to serve one client, other clients have to wait and that's why node should not be used for CPU intensive applications.
+					It should only be used for building data intensive and real time applications. 
+					We build Rest APIs and Backend Application, Real-Time Services (Chat, Games), Blogs, CMS , Social Applications ,Utilities and Tools with Node.js.
+				</p>
+			</div>
     </section>
-		
+
     <footer>
-      <p>Course Web Site</p>
+			<div class="container">
+      	<p>Course Web Site</p>
+			</div>
     </footer>
 		
   </body>
