@@ -10,10 +10,45 @@ When the database prepares the result it puts a message called an event queue.
 The node still monitors the queue in the background so when it finds an event in this queue the thread will process it.
  The node can serve more clients without the need for more hardware.
  But node should not be used for CPU intensive applications like a video encoding or an image manipulation service.
- In these kind of applications we have a lot of calculations that should be done by the CPU. 
+ In these kind of applications we have a lot of calculations that should be done by the CPU. s
 Since node applications are single threaded when performing the calculations to serve one client, 
 other clients have to wait and that's why node should not be used for CPU intensive applications.
  It should only be used for building data intensive and real time applications. 
 
 We build Rest APIs and Backend Application, Real-Time Services (Chat, Games), Blogs, CMS , S
 ocial Applications ,Utilities and Tools with Node.js.
+
+Features
+
+1.Asynchronous and Event Driven
+     - the server doesn't wait the API to return the data while waiting it is used to serve another client.
+
+2.Very Fast
+     - the code termination of the node.js library is fast.
+
+3.Single Threaded but Highly Scalable
+     - the single thread program can handle many requests from the clients.
+
+4.No Buffering
+     - it gives the data in chunks
+
+5.License
+     - it is an MIT licensed.
+
+Important Components
+
+1. Import required modules
+2. Create server
+3. Read request and return response
+
+Node.js Applications
+
+1. I/O bound Applications
+
+2. Data Streaming Applications
+
+3. Data Intensive Real-time Applications (DIRT)
+
+4. JSON APIs based Applications
+
+5. Single Page Applications
