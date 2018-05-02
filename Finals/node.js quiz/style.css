@@ -2,14 +2,12 @@
 body
 {
     font-family: verdana;
-    background-image: url("1.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 100%;
     background-size: cover;
+    background-color:dimgray;
 }
 
-.samp
+.head
 {
     margin: auto;
     padding: 20px;
@@ -22,7 +20,7 @@ header{
 
 
 h1{
-    color:darkgray;
+    color:bisque;
     font-family: : verdana;
 }
 
@@ -42,9 +40,26 @@ button{
 
 input{
   width: 10%;
+    
 }
 
 label{
   margin-left: 100px; 
   color: antiquewhite;
+}
+
+#question1{
+    text-indent: 100px;  
+}
+#question2{
+    text-indent: 100px;  
+}
+#question3{
+    text-indent: 100px;  
+}
+#question4{
+    text-indent: 100px;  
+}
+#question5{
+    text-indent: 100px;  
 }
