@@ -1,0 +1,6 @@
+1. Store quiz/activity files into one Resource Folder
+2. Take relative paths and store that into the database instead
+3. Revise quizzes to have a unified look
+4. Convert some of the activities to have either more content (para dynamic) 
+or into php functions
+PRACTICE. For presentation.
