@@ -1,0 +1,65 @@
+
+body
+{
+    font-family: verdana;
+    height: 100%;
+    background-size: cover;
+    background-color:dimgray;
+}
+
+.head
+{
+    margin: auto;
+    padding: 20px;
+    
+}
+
+header{
+    margin-left: 40px;
+}
+
+
+h1{
+    color:bisque;
+    font-family: : verdana;
+}
+
+p{
+    color: antiquewhite;
+     text-indent: 50px;
+}
+
+#demo{
+     text-indent: 100px;
+}
+
+button{
+  margin-left: 100px;
+
+}
+
+input{
+  width: 10%;
+    
+}
+
+label{
+  margin-left: 100px; 
+  color: antiquewhite;
+}
+
+#question1{
+    text-indent: 100px;  
+}
+#question2{
+    text-indent: 100px;  
+}
+#question3{
+    text-indent: 100px;  
+}
+#question4{
+    text-indent: 100px;  
+}
+#question5{
+    text-indent: 100px;  
+}

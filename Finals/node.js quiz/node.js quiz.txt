@@ -1,0 +1,7 @@
+1. Is an open source and cross-platform runtime environment for executing JavaScript code outside of a browser. (Node js)
+2. A feature of the answer above states that the code termination of the node.js library is fast.(Very fast)
+3. A feature that gives the data in chunks.(No buffering)
+
+4.It is an important component in Node.js. (Create server)
+
+5.An example of Real-Time Services that we can create from Node.js. (Chat)

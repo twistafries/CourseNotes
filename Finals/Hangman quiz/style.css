@@ -1,0 +1,26 @@
+body{
+	background-image: url("hangman.jpg");
+	background-size: 100%;
+	display: fixed;
+    position:relative;
+	
+	
+}
+.container{
+	margin-top: 50px;
+}
+.row{
+	margin: auto;
+    width: 10%;
+	padding: 100px;
+	background-color:#3A3A3A;
+	opacity:0.95;
+	color: white;
+	border-radius:10px;
+}
+#correct{
+        letter-spacing: 5px;
+		margin: auto;
+	
+	
+      }

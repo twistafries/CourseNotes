@@ -1,0 +1,18 @@
+ASP.NET
+
+-ASP stands for "Active Server Page" and it was developed by "Microsoft"was introduced in 1998
+-It is an open source webframework use for building web apps and services.
+-It used the MSSQL(Microsoft SQL Server) But you can also use MySQL with it.
+-ASP tools and editors are Visual Studio which is a paid version and Visual Studio Express which is free
+
+
+Advantages
+
+	-Drag and Drop controls are available
+	-Can easily implement Validation by configuring up the property controls
+	-Already have a good reputation in the community
+
+Disadvantage
+	
+	-It doesn't provide full control to developers that uses auto generated HTML
+	-Their MVC architecture have an issue

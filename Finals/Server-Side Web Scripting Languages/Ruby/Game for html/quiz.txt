@@ -1,0 +1,20 @@
+1. global interconnected network of computing devices that uses the Internet
+   Protocol Suite standard to serve billions of users worldwide.
+
+= Internet
+
+2.Invented by Sir Tim Berners-Lee in 1989
+
+=> World Wide Web
+
+3.It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm
+
+=> Javascript
+
+4.A style sheet language used for describing the presentation of a document written in a markup language like HTML. \
+
+=> CSS
+
+5.The standard markup language for creating web pages and web applications.
+
+=>HTML
