@@ -33,7 +33,7 @@
 				<ul>
 					<li>Java objects that are intended to play the role of server components in client-server communication.</li>
 					<li>Handles the client requests by generating responses to such requests.</li>
-					<li>Part of the Java EE specification (see java Servlet API for more details).</li>
+					<li>Part of the Java EE specification (see <a href="https://docs.oracle.com/javaee/7/api/javax/servlet/package-summary.html">Java Servlet API</a> for more details).</li>
 				</ul>
 
 				<h3>Servlet Life Cycle</h3>
@@ -50,13 +50,13 @@
 					<li>request handling - service() method
 						<ul>
 							<li>Invoked for each client request..
-							servlet performs whatever logic necessary in order to serve the request and generate a response.</li>
-							<li>Multiple client requests are typically handled by a single, multi-threaded sevlet instance, thus,
+							servlet performs whatever logic is necessary in order to serve the request and generate a response.</li>
+							<li>Multiple client requests are typically handled by a single, multi-threaded servlet instance, thus,
 							to ensure that the code is being run by the servlet is 'thread-safe'.</li>
 						</ul></li>
 					<li>destruction - destroy() method
 						<ul>
-							<li>Invoked before the servlet instanceis 'unloaded', and is intended for any 'housekeeping' code that the servlet may need to run.</li>
+							<li>Invoked before the servlet instance is 'unloaded', and is intended for any 'housekeeping' code that the servlet may need to run.</li>
 						</ul></li>
 				</ul>
 
