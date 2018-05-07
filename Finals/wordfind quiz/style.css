@@ -1,6 +1,6 @@
 body {
   text-align:center;
-  background:black;
+  background:white;
 }
 #grid,.box{
   -webkit-user-select:none;
@@ -15,7 +15,7 @@ body {
   width:410px;
   height:410px;
   padding:20px;
-  background:lightgreen;
+  background:darkblue;
   border-radius:10px;
   font-size:20px;
   float:left;
@@ -51,7 +51,7 @@ body {
 
 
 .box:hover{
-  background-color: green;
+  background-color: blue;
 }
 
 
@@ -63,7 +63,7 @@ body {
   height:410px;
   width:200px;
   box-shadow:0 0 20px rgba(0,0,0,0.1);
-  background:lightgreen;
+  background:skyblue;
   border-radius:10px;
 }
 
