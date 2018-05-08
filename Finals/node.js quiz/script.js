@@ -35,7 +35,7 @@ function myFunction() {
 
     answer1 = document.getElementById("one").value;
 
-    if (answer1 == "Node js") {
+    if (answer1.toUpperCase() == "NODE JS") {
         result1 = "Your answer is Correct!";
     } else {
         result1 = "Your answer is Wrong";
@@ -44,7 +44,7 @@ function myFunction() {
 
     answer2 = document.getElementById("two").value;
 
-    if (answer2 == "Very fast") {
+    if (answer2.toUpperCase() == "VERY FAST") {
         result2 = "Your answer is Correct!";
     } else {
         result2 = "Your answer is Wrong";
@@ -54,7 +54,7 @@ function myFunction() {
     
     answer3 = document.getElementById("three").value;
 
-    if (answer3 == "No buffering") {
+    if (answer3.toUpperCase() == "NO BUFFERING") {
         result3 = "Your answer is Correct!";
     } else {
         result3 = "Your answer is Wrong";
@@ -63,7 +63,7 @@ function myFunction() {
     
     answer4 = document.getElementById("four").value;
 
-    if (answer4 == "Create server") {
+    if (answer4.toUpperCase() == "CREATE SERVER") {
         result4 = "Your answer is Correct!";
     } else {
         result4 = "Your answer is Wrong";
@@ -73,7 +73,7 @@ function myFunction() {
     
     answer5 = document.getElementById("five").value;
 
-    if (answer5 == "Chat") {
+    if (answer5.toUpperCase() == "CHAT") {
         result5 = "Your answer is Correct!";
     } else {
         result5 = "Your answer is Wrong";
