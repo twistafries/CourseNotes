@@ -4,6 +4,26 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
+<header>
+			<div class="container">
+				<h1><span class="header-blue">PHP</span> <span class="sub-header">Hangman Game</span></h1>
+			</div>
+    </header>
+    
+    <nav>
+			<div class="container">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="java.html">Java</a></li>
+					<li><a href="php.html">PHP</a></li>
+					<li><a href="nodejs.html">Node.js</a></li>
+					<li><a href="ruby.html">Ruby</a></li>
+                    <li><a href="index.html">Nodejs Quiz</a></li>
+				</ul>
+			</div>
+    </nav>
+
   <body>
     <div class="container">
       <div class="row">
@@ -12,7 +32,7 @@
 		  <h3> type any letter:</h3>
           <p id="correct"></p>
           <p>
-            <span id="remain">10</span> guesses remain
+            <span id="remaining">10</span> guesses remain
           </p>
           <p id="wrong"></p>
         </div>
@@ -32,7 +52,7 @@
           this.word = words[Math.floor(Math.random() * words.length)];
           this.$correct = document.getElementById('correct');
           this.$wrong = document.getElementById('wrong');
-          this.$remaining = document.getElementById('remain');
+          this.$remaining = document.getElementById('remaining');
           this.$correct.innerHTML = '_'.repeat(this.word.length);
         },
         guess: function(letter) {
@@ -61,7 +81,7 @@
           this.guess.push(letter);
           this.$wrong.innerHTML += ' ' + letter;
           this.left--;
-          this.$remain.innerHTML = this.left;
+          this.$remaining.innerHTML = this.left;
           if (this.left < 1) {
             alert('you lose! '+ this.word);
             this.complete = true;
@@ -74,5 +94,13 @@
         game.guess(letter);
       };
     </script>
+  <footer>
+			<div class="container">
+      	<p>Course Web Site</p>
+			</div>
+    </footer>
+
+</body>  
+</html>  	
   </body>
 </html>
