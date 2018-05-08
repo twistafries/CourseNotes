@@ -1,13 +1,14 @@
 body{
-	background-image: url("hangman.jpg");
-	background-size: 100%;
-	display: fixed;
-    position:relative;
+	width: 100%;
+	margin:0%;
 	
 	
 }
 .container{
-	margin-top: 50px;
+	
+	padding:10px;
+	  width: 90%;
+  margin: auto;
 }
 .row{
 	margin: auto;
@@ -24,3 +25,67 @@ body{
 	
 	
       }
+
+/************************************** HEADER **************************************/
+
+
+header {
+	font-family: "Helvetica Neue Custom", Helvetica, Arial, sans-serif;
+	letter-spacing: -1px;
+}
+
+header .sub-header {
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+
+header .header-blue {
+	color: #53b6d0;
+}
+
+header .header-gray {
+	color: #3c3f41;
+}
+
+/************************************** NAV **************************************/
+
+nav {
+  background: #3c3f41;
+  color: #ffffff;
+  min-height: 70px;
+  border-bottom: #53b6d0 3px solid;
+  overflow: auto;
+  margin-bottom: 0;
+}
+
+nav ul {
+  list-style: none;
+	padding: 0;
+}
+
+nav li {
+  display: inline;
+  padding-right: 50px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover{
+  color: #53b6d0;
+}
+
+/************************************** FOOTER **************************************/
+
+footer {
+  background:#3c3f41;
+  color: #ffffff;
+  padding-top: 5px;
+  min-height: 70px;
+  border-top: #53b6d0 3px solid;
+  overflow: auto;
+  margin-bottom: 0;
+}
