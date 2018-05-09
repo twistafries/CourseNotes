@@ -1,0 +1,75 @@
+SQL INJECTION
+
+There are many types of attacks that can make our web application,
+expose our data and steal them one of the famous and most common type of attack
+is an injection this is were the attacker inject some malicious code to our website's
+exposing important information such as username and password of the administrator
+or some of our users. There are also many types of Injection such as LDAP Injection,
+XML Injection,Code Injection, XPath Injection,SSI Injection,ORM Injection, and etc.
+And the most common attack of injection is SQL Injection.
+
+SQL injection is the most common of all injection attack because it has a lot of 
+issue in database-drive sites.
+
+SQL Injection is  compose of  code that query certain information in the database
+and then after that successful attempt  it will exploit sensitive information
+from the database where it can modify our data in the database and it an execute
+administration operation
+
+
+Example:
+
+This example below will query all data where the company Id is same to
+that is requested. 
+
+	companyId = getRequestString("company_Id");
+	querySQL  = "SELECT * FROM company WHERE company_Id = " +companyId;
+
+And then if it doesn't return anything the attacker can also try returning
+all the information in the table by using the "OR 1=1" which is a means true
+
+	SELECT * FROM company where company_Id = 217 or 1=1 
+
+PREVENTION OF SQL INJECTION
+
+1.By using Prepared Statements (Parameterized Queries)
+	-It ensures that the attacker will not be able to modify the query, Even if
+	its the one who inserted it. and it avoids the "Or 1=1" that return alot of
+	info.
+2.Stored Procedures
+	-It has the same effectiveness of Prepared Statements
+	-But it is not always safe from sql injection
+3.White List Input Validation
+	- Use to validate information that is entered. 
+4.Escaping All User-Supplied Input
+	-If all 3 Prevention above is not easy then Escaping All User-Supplied Input
+	 will be used. Although it is not guaranteed to prevent all SQL injection.
+	-This method will not be confused in which SQL code is written by the developer and which
+	is not written by the developer
+
+
+
+
+	
+
+
+
+
+OWASP.(n.d).SQL Injection. Retrieved May 8,2018 from
+	https://www.owasp.org/index.php/SQL_Injection
+
+W3schools.(n.d).SQL Injection. Retrieved May 9,2018 from
+	https://www.w3schools.com/sql/sql_injection.asp
+
+OWASP.(n.d).SQL Injection Prevention Cheat Sheet Retrieved May 9,2018 from
+	https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet
+	
+
+
+
+
+
+
+
+
+
