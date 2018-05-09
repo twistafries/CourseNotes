@@ -12,14 +12,14 @@ body{
 }
 .row{
 	margin: auto;
-    width: 10%;
+    width: 12%;
 	padding: 100px;
 	background-color:#3A3A3A;
 	opacity:0.95;
 	color: white;
 	border-radius:10px;
 }
-#correct{
+#right{
         letter-spacing: 5px;
 		margin: auto;
 	
