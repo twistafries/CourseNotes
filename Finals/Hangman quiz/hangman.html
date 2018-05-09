@@ -24,64 +24,65 @@
 			</div>
     </nav>
 
-  <body>
+ <body>
     <div class="container">
       <div class="row">
         <div>
           <h1>Hangman</h1>
 		  <h3> type any letter:</h3>
-          <p id="correct"></p>
+          <p id="right"></p>
           <p>
-            <span id="remaining">10</span> guesses remain
+            <span id="remain">10</span> guesses remain
           </p>
           <p id="wrong"></p>
         </div>
-	  <form id="hangman">
+		<form id="hangman">
      <input id="guess" name="restart" type="submit" value="Restart" />
+      </div>
     </div>
-   </div>
+
 
 
     <script>
       var words = ['serverside','binaries','scripts','framework','webpage','array','errorhandling','mysql','network','application'];
       var game = {
-        guess: [],
-        left: 10,
+        left: 11,
+        guessed: [],
         start: function() {
           this.complete = false;
           this.word = words[Math.floor(Math.random() * words.length)];
-          this.$correct = document.getElementById('correct');
+          this.$right = document.getElementById('right');
           this.$wrong = document.getElementById('wrong');
-          this.$remaining = document.getElementById('remaining');
-          this.$correct.innerHTML = '_'.repeat(this.word.length);
+          this.$remain = document.getElementById('remain');
+          this.$right.innerHTML = '_'.repeat(this.word.length);
         },
         guess: function(letter) {
           if (this.left > 0 && this.complete != true) {
-            if (this.word.indexOf(letter) > -1 || this.guess.indexOf(letter) > -1) {
-              this.correct(letter);
+            if (this.word.indexOf(letter) > -1 || this.guessed.indexOf(letter) > -1) {
+              this.right(letter);
             } else {
               this.wrong(letter);
             }
           }
         },
-        correct: function(letter) {
+        right: function(letter) {
           for(var i = 0; i < this.word.length; i++) {
             if (this.word[i] == letter) {
-              var word = this.$correct.innerHTML.split('');
+              var word = this.$right.innerHTML.split('');
               word[i] = letter;
-              this.$correct.innerHTML = word.join('');
+              this.$right.innerHTML = word.join('');
             }
           }
-          if (this.$correct.innerHTML.indexOf('_') < 0) {
+          if (this.$right.innerHTML.indexOf('_') < 0) {
             alert('you win!');
             this.complete = true;
           }
         },
         wrong: function(letter) {
-          this.guess.push(letter);
+          this.guessed.push(letter);
           this.$wrong.innerHTML += ' ' + letter;
           this.left--;
-          this.$remaining.innerHTML = this.left;
+          this.$remain.innerHTML = this.left;
           if (this.left < 1) {
             alert('you lose! '+ this.word);
             this.complete = true;
