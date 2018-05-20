@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide, Find and Guess</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+<div class="container">
+	
+	<h3>Slide, Find and Guess</h3>
+
+	<div class="container-2">
+
+		<!--Model-->
+		<div class="mySlides"  align="center">
+			<img src="images/model1.jpeg">
+			<img src="images/model2.jpg">
+			<img src="images/model3.jpg">
+
+		</div>
+
+		<!--View-->
+		<div class="mySlides"  align="center">
+			<img src="images/view1.jpg">
+			<img src="images/view2.jpg">
+			<img src="images/view3.jpg">
+		</div>
+
+		<!--Controller-->
+		<div class="mySlides"  align="center">
+			<img src="images/controller1.jpg">
+			<img src="images/controller2.jpg">
+			<img src="images/controller3.jpg">
+		</div>
+
+
+		<!--Architecture-->
+		<div class="mySlides"  align="center">
+			<img src="images/arch1.jpg">
+			<img src="images/arch2.jpg">
+			<img src="images/arch3.jpg">
+		</div>
+
+		<!--ruby-->
+		<div class="mySlides"  align="center">
+			<img src="images/ruby1.jpg">
+			<img src="images/ruby2.png">
+			<img src="images/ruby3.jpg">
+		</div>
+
+		<!--dry-->
+		<div class="mySlides"  align="center">
+			<img src="images/dry1.jpg">
+			<img src="images/dry2.jpg">
+			<img src="images/dry3.jpg">
+		</div>
+
+		<!--hansson-->
+		<div class="mySlides"  align="center">
+			<img src="images/hansson1.jpeg">
+			<img src="images/hansson2.png"">
+			<img src="images/hansson3.jpg"">
+		</div>
+
+		<!--serverside-->
+		<div class="mySlides"  align="center">
+			<img src="images/server1.jpg">
+			<img src="images/server2.jpg">
+			<img src="images/server3.jpg">
+		</div>
+
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+
+
+	<p id="right"></p>
+    <p>
+    	<span id="remain">3</span> guesses remain
+    </p>
+    <p id="wrong"></p>
+
+</div>
+<script type="text/javascript">
+	 var words = ['model','view','controller','architecture','ruby','dry','hansson','serverside'];
+      var game = {
+        left: 4,
+        guessed: [],
+        start: function() {
+          this.complete = false;
+          this.word = words[Math.floor(Math.random() * words.length)];
+          this.$right = document.getElementById('right');
+          this.$wrong = document.getElementById('wrong');
+          this.$remain = document.getElementById('remain');
+          this.$right.innerHTML = '_	'.repeat(this.word.length);
+
+        },
+
+        guess: function(letter) {
+          if (this.left > 0 && this.complete != true) {
+            if (this.word.indexOf(letter) > -1 || this.guessed.indexOf(letter) > -1) {
+              this.right(letter);
+            } else {
+              this.wrong(letter);
+            }
+          }
+        },
+        right: function(letter) {
+          for(var i = 0; i < this.word.length; i++) {
+            if (this.word[i] == letter) {
+              var word = this.$right.innerHTML.split('	');
+              word[i] = letter;
+              this.$right.innerHTML = word.join('	');
+            }
+          }
+          if (this.$right.innerHTML.indexOf('_	') < 0) {
+            alert('Congratulation you guessed the word!');
+            this.complete = true;
+          }
+        },
+        wrong: function(letter) {
+          this.guessed.push(letter);
+          this.left--;
+          this.$remain.innerHTML = this.left;
+          if (this.left < 1) {
+            alert('Sorry please try again. The word is '+ this.word);
+            this.complete = true;
+          }
+        }
+      };
+      game.start();
+      document.onkeyup = function(event) {
+        var letter = String.fromCharCode(event.keyCode).toLowerCase();
+        game.guess(letter);
+      };
+</script>
+<script type="text/javascript">
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
