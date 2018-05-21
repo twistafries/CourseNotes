@@ -29,103 +29,92 @@
     <nav>
 			<div class="container">
 				<ul>
-					<li><a href="index.php">Home</a></li>
-					<li><a href="about.php">About</a></li>
-					<li><a href="java.php">Java</a></li>
-					<li><a href="php.php">PHP</a></li>
-					<li><a href="nodejs.php">Node.js</a></li>
-					<li><a href="ruby.php">Ruby</a></li>
-					<?php
-						if (isset($_SESSION["siteuser"])) {
-							echo '<li><a href="logout.php">Logout</a></li>';
-						}
-					?>
-					</ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="java.html">Java</a></li>
+					<li><a href="php.html">PHP</a></li>
+					<li><a href="nodejs.html">Node.js</a></li>
+					<li><a href="ruby.html">Ruby</a></li>
+				</ul>
 			</div>
     </nav>
 
     <section class="content">
 			<div class="container">
 				<h2>Node.js</h2>
-				<p>
-					Node.js is an open source and cross-platform runtime environment for executing JavaScript code outside of a browser.
-					The client can store data, send emails, push notifications to the server. 
-					It builds highly scalable data and real time back-end services. 
-					It is a runtime environment for executing JavaScript code. 
-					Node is asynchronous by default, so in a single thread it can handle multiple requests from the client. 
-				<p>
-					For example in a single thread when a request arrives - the thread handles that request, and if we query a database this thread doesn't wait for the database to return the results. While the database is executing the query, the thread can be used to serve another client.
-				</p>
-				<p>
-					When the database prepares the result it puts a message called an 'event queue.' 
-					The node still monitors the queue in the background so when it finds an event in this queue the thread will process it.
-				</p>
-				<p>
-					The node can serve more clients without the need for more hardware.
-					But node should not be used for CPU intensive applications like video encoding or an image manipulation service.
-				</p>
-				<p>
-					In these kind of applications we have a lot of calculations that should be done by the CPU. Since node applications are single threaded when performing the calculations to serve one client, other clients have to wait and that's why node should not be used for CPU intensive applications.
-					It should only be used for building data intensive and real time applications. 
-					We build REST APIs and Back-end Application, Real-Time Services (Chat, Games), Blogs, CMS , Social Applications ,Utilities and Tools with Node.js.
-				</p>
+                
+                <p>Node.js is a server environment that developed by Ryan Dahl on 2009. Node.js is an open source and cross-platform runtime environment for executing JavaScript code outside of a browser. Node js is a javascript-based that runs on V8 of javascript runtime environment. Node js executes a javascript and it provides different libraries and frameworks such as Hapi.js, Socket.io, Express.js, Mojito, Meteor, Derby, Mean.js, Sails.js Koa.js, Total.js and others.</p>
+
+                <p>The client can store data, send emails, push notifications to the server. It builds highly scalable data and real time back-end services. It is a runtime environment for executing JavaScript code. Node is asynchronous by default, so in a single thread it can handle multiple requests from the client.</p>
+
+
+                <h3>Example</h3>
+
+                 <p>In a single thread when a request arrives - the thread handles that request, and if we query a database this thread doesn't wait for the database to return the results. While the database is executing the query, the thread can be used to serve another client.
+
+                When the database prepares the result it puts a message called an 'event queue.' The node still monitors the queue in the background so when it finds an event in this queue the thread will process it.
+
+                The node can serve more clients without the need for more hardware. But node should not be used for CPU intensive applications like video encoding or an image manipulation service.</p>
+
+                <h3>Features</h3>
+
+                <li>Asynchronous and Event Driven - the server doesn't wait the API to return the data it is used to serve another client while waiting for the results.</li>
+                <li>Very Fast - the code termination of the node.js library is fast.</li>
+                <li>Single Threaded but Highly Scalable - the single thread program can handle many requests from the clients.</li>
+                <li>No Buffering - it gives the data in chunks</li>
+                <li>License - it is an MIT licensed.</li>
+
+                <h3>Node.js Applications</h3> 
+                <li> I/O bound Applications</li>
+                <li> Data Streaming Applications </li>
+                <li> Data Intensive Real-time Applications (DIRT) </li>
+                <li> JSON APIs based Applications </li>
+                <li> Single Page Applications </li>
+
+
+                <h3>Advantages</h3>
+
+                <li> It is an asynchronous event-driven IO assists concurrent request handling.</li>
+                <li> It stores the cache of indiviual modules.</li>
+                <li> It is a single threaded program that uses call-back methods and event loops.</li>
+
+                <h3>Disadvantages</h3>
+
+                <li> It does not support relational database.</li>
+                <li> It not advisable to use it in creating a  large web applications since it is not multi-threaded.</li>
+                <li> It is inconsistent that in every update of the API you also have to change your codes.</li>
+                
+                <h3>Creating a Simple Node.js Application</h3>
                 
                 <p>
-                Features
-                <br>
+                    // Import the directive load which is the http module.
+                    <br>
+                    var http = require("http");
+                    <br>
+                    <br>
 
-                1.Asynchronous and Event Driven
-                 <br>
-                     - the server doesn't wait the API to return the data it is used to serve another client while waiting for the results.
-                 <br>
-                2.Very Fast
-                 <br>
-                     - the code termination of the node.js library is fast.
-                 <br>
-                3.Single Threaded but Highly Scalable
-                 <br>
-                     - the single thread program can handle many requests from the clients.
-                 <br>
-                4.No Buffering
-                 <br>
-                     - it gives the data in chunks
-                 <br>
+                    //We create the server the bind it on port number 8080.
+                    <br>
+                    http.createServer(function (request, response) {
+                    <br>
+                    response.writeHead(200, {'Content-Type': 'text/plain'});
+                    <br>
+                    //The response body is Hello World
+                    <br>
+                    response.end('Hello World\n');
+                    <br>
+                    }).listen(8080);
+                    <br>
 
-                5.License
-                 <br>
-                     - it is an MIT licensed.
-                 <br>
+                    //Then the console displays the content.
+                    <br>
+                    console.log('Server running at http://127.0.0.1:8080/');
+                    <br>
                 </p>
-                <p>
-                Important Components
-                 <br>
-
-                1. Import required modules
-                 <br>
-                2. Create server
-                 <br>
-                3. Read request and return response
-                 <br>
-                </p>
-                <p>
-                Node.js Applications
-                 <br>
-
-                1. I/O bound Applications
-                 <br>
-
-                2. Data Streaming Applications
-                 <br>
-
-                3. Data Intensive Real-time Applications (DIRT)
-                 <br>
-                4. JSON APIs based Applications
-                 <br>
-                5. Single Page Applications
-                 <br>
-                </p>
+                                     
 			</div>
     </section>
+
 	<?php
 		if (!isset($_SESSION["siteuser"])) {
 			echo '<p> To show the activity, please login:</p>';
