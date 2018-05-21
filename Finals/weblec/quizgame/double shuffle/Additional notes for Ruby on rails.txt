@@ -1,0 +1,114 @@
+CREATE AN NEW RUBY ON RAILS
+
+After installing ruby on rails you can already use the command line to create 
+your rails and then you can install the rails gem by typing the command 
+"gem install rails" then you can create the following list below
+
+-------------------------------------------------------------
+
+
+$ rails new commandsapp
+     create
+     create  README.md
+     create  Rakefile
+     create  config.ru
+     create  .gitignore
+     create  Gemfile
+     create  app
+     ...
+     create  tmp/cache
+     ...
+        run  bundle install
+
+--------------------------------------------------------------
+
+Rails Server
+
+The server for rail will launch a webserver named puma whichs is bundled that
+with rails. You can run this in the new rails app
+
+---------------------------------------------------------------
+
+$ cd commandsapp
+$ bin/rails server
+=> Booting Puma
+=> Rails 5.1.0 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.0.2 (ruby 2.3.0-p0), codename: Plethora of Penguin Pinatas
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://localhost:3000
+Use Ctrl-C to stop
+
+----------------------------------------------------------------
+
+
+SESSION HANDLING
+
+
+Session is the most perfect place to store the data during a request that can
+be read during or later request
+
+============================================================================
+
+Data Can Be set in action from the controller:
+
+------------------------------------------------------------
+app/controller/sessions_controller.rb
+------------------------------------------------------------
+def create
+  # ...
+  session[:current_user_id] = @user.id
+  # ...
+end
+------------------------------------------------------------
+
+
+
+
+Read it in another
+-------------------------------------------------------------
+app/controllers/users_controller.rb
+-------------------------------------------------------------
+def index
+  current_user = User.find_by_id(session[:current_user_id])
+  # ...
+end
+-------------------------------------------------------------
+
+
+Then After you request a page, the server will set a cookie to respond back
+
+--------------------------------------------------------------
+~ jweiss$ curl -I http://www.google.com | grep Set-Cookie
+
+Set-Cookie: NID=67=J2xeyegolV0SSneukSOANOCoeuDQs7G1FDAK2j-nVyaoejz-4K6aouUQtyp5B_rK3Z7G-EwTIzDm7XQ3_ZUVNnFmlGfIHMAnZQNd4kM89VLzCsM0fZnr_N8-idASAfBEdS; expires=Wed, 16-Sep-2015 05:44:42 GMT; path=/; domain=.google.com; HttpOnly
+--------------------------------------------------------------
+
+
+And after your cookie expires,It will make another request, and the browser
+will send again the cookie back to the server:
+
+
+---------------------------------------------------------------
+> GET / HTTP/1.1
+> User-Agent: curl/7.37.1
+> Host: www.google.com
+> Accept: */*
+> Cookie: NID=67=J2xeyegolV0SSneukSOANOCoeuDQs7G1FDAK2j-nVyaoejz-4K6aouUQtyp5B_rK3Z7G-EwTIzDm7XQ3_ZUVNnFmlGfIHMAnZQNd4kM89VLzCsM0fZnr_N8-idASAfBEdS; expires=Wed, 16-Sep-2015 05:44:42 GMT; path=/; domain=.google.com; HttpOnly
+----------------------------------------------------------------
+
+
+=============================================================================
+
+
+
+
+References:
+	
+	RAILSGUIDES. (n.d). The Rails Command Line. Retrieved from
+		http://guides.rubyonrails.org/command_line.html
+
+	Weiss, Justin. (n.d). How Rails Sessions Work. Retrieved from
+		https://www.justinweiss.com/articles/how-rails-sessions-work/

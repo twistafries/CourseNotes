@@ -1,8 +1,6 @@
-
 h3{
 	font-size: 50px;
 	text-align: center;
-
 }
 
 
@@ -16,16 +14,17 @@ img{
 
 p{
 	text-align: center;
-
-  color: #ffffff;;
+	color: #ffffff;
 	font-size: 30px;
 }
 
-.container{
+.container-2{
 	background: #3c3f41;
   	color: #ffffff;
 	padding: 10px;
 	position: relative;
+	outline-color: #53b6d0;
+	outline-style: solid;
 }
 
 .prev, .next {
