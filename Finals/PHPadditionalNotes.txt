@@ -1,0 +1,78 @@
+PHP contains PHP scripting code and also HTML tags.
+
+and here is a basic example on how output a text using a built-in PHP function "echo".
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Basic PHP</h1>
+
+<?php
+echo "Hello World!";
+?>
+
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------
+
+Declaring PHP variables, first we need $ this symbol and next is the name of the variable you want
+and also variable is a case sensitive. below is the sample code:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$love = "I love";
+$web = WEBTECH;
+
+
+echo $love;
+echo "<br>";
+echo $web;
+?>
+
+</body>
+</html>
+
+-----------------------------------------------------------------------------------------
+
+We will show you a simple code on how to connect in MYSQL and display its table using PHP.
+
+<?php
+
+$host = "localhost";
+$user = "root";
+$pass="";
+$db = "company";
+
+
+$mysqli = new mysqli($host, $user, $pass, $db);
+
+//show tables
+$result = $mysqli->query("SHOW TABLES from company");
+
+while($tableName = mysqli_fetch_row($result))
+{
+    $table = $tableName[0];
+    echo '<h3>' ,$table, '</h3>';
+    $result2 = $mysqli->query("SELECT * FROM company.baguiocompany");
+    if(mysqli_num_rows($result2))
+    {
+        echo '<table cellpadding = "1" cellspacing = "1" class "db-table">';
+        echo '<tr><th>id</th><th>company name</th><th> location</th></tr>';
+        while($row2 = mysqli_fetch_row($result2))
+        {
+            echo '<tr>';
+            foreach ($row2 as $key=>$value)
+            {
+                echo '<td>',$value, '</td>';
+            }
+            echo '</tr>';
+        }
+        echo '</table><br />';
+    }
+}
+?>
