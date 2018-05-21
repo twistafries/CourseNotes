@@ -100,30 +100,57 @@
 					<div class="sample-code">
 							<span class="keyword">protected void</span> doGet(HttpServletRequest request, HttpServletResponse response) <span class="keyword">throws</span> ServletException, IOException {<br><br>
 
-									&nbsp;&nbsp;&nbsp;&nbsp;String name = request.getParameter(<span class="string">"yourname"</span>);<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;String color = request.getParameter(<span class="string">"favcolor"</span>);<br><br>
-
-									&nbsp;&nbsp;&nbsp;&nbsp;response.setStatus(HttpServletResponse.SC_OK);<br>
 									&nbsp;&nbsp;&nbsp;&nbsp;response.setContentType(<span class="string">"text/html"</span>);<br><br>
 
 									&nbsp;&nbsp;&nbsp;&nbsp;PrintWriter out = response.getWriter();<br><br>
 
-									&nbsp;&nbsp;&nbsp;&nbsp;out.println(<span class="string">"<!DOCTYPE html>"</span>);<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;out.println(<span class="string">"&lt;html lang='en'>"</span>);<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;out.println(<span class="string">"&lt;head>"</span>);<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;out.println(<span class="string">"&nbsp;&nbsp;&lt;meta charset='UTF-8'>"</span>);<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;out.println(<span class="string">"&nbsp;&nbsp;&lt;title>Servlet Demo: Handling Form Data Submission (GET)&lt;/title>"</span>);<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;out.println(<span class="string">"&lt;/head>"</span>);<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;out.println(<span class="string">"&lt;body>"</span>);<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;out.printf (<span class="string">"&nbsp;&nbsp;&lt;h1 style='color: %s'>Hello, %s!&lt;/h1>"</span>, color, name);<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;out.println(<span class="string">"&lt;/body>"</span>);<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;out.println(<span class="string">"&lt;/html>"</span>);<br><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;out.println(<span class="string">"&lt;h1>Hello Webtech!!!&lt;/h1>"</span>);<br>
 
 									&nbsp;&nbsp;&nbsp;&nbsp;out.close();<br>
 							}
 					</div>
-
 				</ul>
+
+				<h3>Send Information to Server</h3>
+				<p>Sending information from client browser to the server is important and often done. There are two ways of sending infomation to the server, using GET method and POST method.</p>
+
+					<h4>doGet(HttpServletRequest request, HttpServletResponse response)</h4>
+					<p>This method handles GET request by the client. This method is commonly used for passing information from the client to the server. Get method is not recommended when passing or sending sensitive information like password to the server.</p>
+
+					<h4>doPost(HttpServletRequest request, HttpServletResponse response)</h4>
+					<p>This method handles POST request by the client. This method is commonly used for passing information to the server. This is commonly used for passing information from forms.</p>
+
+					<h4>Get data from form</h4>
+					<p></p>
+					<ul>
+						<li>getParameter() - This method is used to get value from form by putting the id as the argument.</li>
+						<li>getParameterValues() - This method is used for multiple values parameter like checkbox.</li>
+						<li>getParameterNames() - This method is used to get the complete list of parameter.</li>
+					</ul>
+					<div class="sample-code">
+						<span class="keyword">&lt;html></span><br>
+					   	&nbsp;&nbsp;<span class="keyword">&lt;body></span><br>
+					      &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;form</span> action = <span class="string">"HelloForm"</span> method = <span class="string">"GET"</span><span class="keyword">></span><br>
+					        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name: <span class="keyword">&lt;input</span> type = <span class="string">"text"</span> name = <span class="string">"name"</span><span class="keyword">></span><br>
+					        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;br/></span><br>
+					        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;input</span> type = <span class="string">"submit"</span> value = <span class="string">"Submit"</span> <span class="keyword">/></span><br>
+					      &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;/form></span><br>
+					   	&nbsp;&nbsp;<span class="keyword">&lt;/body></span><br>
+						<span class="keyword">&lt;html></span><br>
+					</div>
+					<br>
+					<div class="sample-code">
+						<span class="keyword">protected void</span> doGet(HttpServletRequest request, HttpServletResponse response) <span class="keyword">throws</span> ServletException, IOException {<br><br>
+
+									&nbsp;&nbsp;&nbsp;&nbsp;response.setContentType(<span class="string">"text/html"</span>);<br><br>
+
+									&nbsp;&nbsp;&nbsp;&nbsp;PrintWriter out = response.getWriter();<br><br>
+
+									&nbsp;&nbsp;&nbsp;&nbsp;out.println(<span class="string">"&lt;h1>My Name is "</span> + request.getParameter(<span class="string">"name"</span>) + <span class="string">"&lt;/h1>"</span>);<br>
+
+									&nbsp;&nbsp;&nbsp;&nbsp;out.close();<br>
+							}
+					</div>
 			</div>
     </section>
 	<?php
