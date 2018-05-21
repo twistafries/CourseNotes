@@ -74,22 +74,67 @@
 					<li>For security purposes since it's open source everyone can view PHP's source code so it can easily hack it to identify bugs in the code.</li>
 				</ul>
 				
+				<h3>Sample Code:</h3>
+				<p style="text-indent: 40px">PHP contains PHP scripting code and also HTML tags and here is a basic example on how to output a text using a built-in PHP function "echo".</p>
+
 				<div class="sample-code">
 					&lt;!DOCTYPE html><br>
-						<span class="keyword">&lt;html</span> <span class="attribute">lang</span>=<span class="string">"en"</span><span class="keyword">></span><br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;head></span><br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;meta</span> <span class="attribute">charset</span>=<span class="string">"UTF-8"</span>><br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;title></span>PHP Demo: Handling Form Data Submission (GET)<span class="keyword">&lt;/title></span><br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;/head></span><br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;body></span><br>
+						<span class="keyword">&lt;html</span><span class="keyword">></span><br>
+						&nbsp;&nbsp;<span class="keyword">&lt;h1></span>Basic PHP<span class="keyword">&lt;/h1></span><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;body></span><br>
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;?php<br>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$name = $_GET[<span class="string">"yourname"</span>];<br>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$color = $_GET[<span class="string">"favcolor"</span>];<br><br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">echo</span> <span class="string">"&lt;Hello World!"</span>;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;/body></span><br>
+					<span class="keyword">&lt;/html></span>
+				</div>
+				
+				<p style="text-indent: 40px">Declaring PHP variables, first we need $ this symbol and next is the name of the variable you want and also variable is a case sensitive. below is the sample code:</p>
 
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">echo</span> <span class="string">"&lt;h1 style='color:</span> $color'<span class="string">>Hello,</span> $name<span class="string">!&lt;/h1>"</span>;<br>
+
+				<div class="sample-code">
+					&lt;!DOCTYPE html><br>
+						<span class="keyword">&lt;html</span><span class="keyword">></span><br>
+						&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;body></span><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;?php<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$love = <span class="string">"I love"</span>;<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$web = <span class="string">"WEBTECH"</span>;<br><br>
+
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">echo</span> $love
+										<span class="string">,</span> $web;<br>
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?><br>
 						&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;/body></span><br>
 					<span class="keyword">&lt;/html></span>
+				</div>
+
+				<p style="text-indent: 40px">We will show you a simple code on how to connect in MYSQL and display its table using PHP. below is the sample code:</p>
+				<div class="sample-code">
+					&lt;?php<br> &nbsp;&nbsp;&nbsp;$host = <span class="string">"localhost"</span>;<br>
+					&nbsp;&nbsp;&nbsp;$user = <span class="string">"root"</span>;<br>
+					&nbsp;&nbsp;&nbsp;$pass = <span class="string">""</span>;<br>
+					&nbsp;&nbsp;&nbsp;$db = <span class="string">"company"</span>;<br><br>
+
+					&nbsp;&nbsp;&nbsp;$mysqli = new mysqli($host, $user, $pass, $db);<br>
+					&nbsp;&nbsp;&nbsp;$result = $mysqli->query(<span class="string">"SHOW TABLES from company"</span>);<br>
+					&nbsp;&nbsp;&nbsp;$mysqli = new mysqli($host, $user, $pass, $db);<br><br>
+					&nbsp;&nbsp;&nbsp;while($tableName = mysqli_fetch_row($result))<br> &nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$table = $tableName[0];<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo<span class="string">'&lt;h1>'</span>,$table,<span class="string">'&lt;/h1>'</span>; <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$result2 = $mysqli->query(<span class="string">"SELECT * FROM company.baguiocompany"</span>);<br><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(mysqli_num_rows($result2))<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo<span class="string">'&lt;table cellpadding = "1" cellspacing = "1" class "db-table'></span>; <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo<span class="string">'&lt;tr>&lt;th>id&lt;/th>&lt;th>company name&lt;/th>&lt;th> location&lt;/th>&lt;/tr>'</span>; <br><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while($row2 = mysqli_fetch_row($result2))<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo<span class="string">'&lt;tr>'</span>; <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach ($row2 as $key=>$value)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo<span class="string">'&lt;td>'</span>,$value,<span class="&nbsp;string">'&lt;/td>'</span>;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo<span class="string">'&lt;tr>'</span>; <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo<span class="string">'&lt;/table>&lt;br/>'</span>; <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					&nbsp;&nbsp;}<br>
+					?><br>
 				</div>
 				
 			</div>
