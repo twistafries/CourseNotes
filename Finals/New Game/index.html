@@ -10,56 +10,63 @@
 <div class="container">
 	
 	<h3>Slide, Find and Guess</h3>
-	<p>Based on the terms above, guess the word using the provided clues.</p>
+	<p></p>
 	<div class="container-2">
 
 		<div class="Slider"  align="center" id="model">
 			<img src="images/model1.jpeg">
 			<img src="images/model2.jpg">
 			<img src="images/model3.jpg">
-
+			<p>Answer for this clue is 5 Letters!</p>
 		</div>
 
 		<div class="Slider"  align="center" id="view">
 			<img src="images/view1.jpg">
 			<img src="images/view2.jpg">
 			<img src="images/view3.jpg">
+			<p>Answer for this clue is 4 Letters!</p>
 		</div>
 
 		<div class="Slider"  align="center" id="controller">
 			<img src="images/controller1.jpg">
 			<img src="images/controller2.jpg">
 			<img src="images/controller3.jpg">
+			<p>Answer for this clue is 10 Letters!</p>
 		</div>
 
 		<div class="Slider"  align="center" id="architecture">
 			<img src="images/arch1.jpg">
 			<img src="images/arch2.jpg">
 			<img src="images/arch3.jpg">
+			<p>Answer for this clue is 12 Letters!</p>
 		</div>
 
 		<div class="Slider"  align="center" id="ruby">
 			<img src="images/ruby1.jpg">
 			<img src="images/ruby2.png">
 			<img src="images/ruby3.jpg">
+			<p>Answer for this clue is 4 Letters!</p>
 		</div>
 
 		<div class="Slider"  align="center" id="dry">
 			<img src="images/dry1.jpg">
 			<img src="images/dry2.jpg">
 			<img src="images/dry3.jpg">
+			<p>Answer for this clue is 3 Letters!</p>
 		</div>
 
 		<div class="Slider"  align="center" id="hansson">
 			<img src="images/hansson1.jpeg">
 			<img src="images/hansson2.png">
 			<img src="images/hansson3.jpg">
+			<p>Answer for this clue is 7 Letters!</p>
 		</div>
 
 		<div class="Slider"  align="center" id="serverside">
 			<img src="images/server1.jpg">
 			<img src="images/server2.jpg">
 			<img src="images/server3.jpg">
+			<p>Answer for this clue is 10 Letters!</p>
 		</div>
 
 
@@ -69,8 +76,10 @@
 
 
 	<p id="right"></p>
+	<p id="hint"><>
+	<p id="mesg"></p>
     <p>
-    	<span id="remain">3</span> guesses remain
+    	<span id="remain">3</span> guesses remaining
     </p>
     <p id="wrong"></p>
 
@@ -78,18 +87,23 @@
 <script type="text/javascript">
   var slideIndex = 1;
   showpict(slideIndex);
-
+  var generated="";
 	 var words = ['model','view','controller','architecture','ruby','dry','hansson','serverside'];
+	 
       var game = {
         left: 4,
         guessed: [],
         start: function() {
           this.complete = false;
           this.word = words[Math.floor(Math.random() * words.length)];
+		  generated = this.word;
           this.$right = document.getElementById('right');
           this.$wrong = document.getElementById('wrong');
           this.$remain = document.getElementById('remain');
-          this.$right.innerHTML = '_	'.repeat(this.word.length);
+		  document.getElementById('hint').innerHTML = this.word.split('').sort(function randomise(a, b){
+			return Math.random()>.5 ? -1 : 1;
+		  });
+          this.$right.innerHTML = this.word.length + ' letters: ' + '_	'.repeat(this.word.length);
 
         },
 
@@ -111,7 +125,7 @@
             }
           }
           if (this.$right.innerHTML.indexOf('_	') < 0) {
-            alert('Congratulation you guessed the word!');
+			document.getElementById('mesg').innerHTML='Congratulations, you guessed the word!';
             this.complete = true;
           }
         },
@@ -120,7 +134,7 @@
           this.left--;
           this.$remain.innerHTML = this.left;
           if (this.left < 1) {
-            alert('Sorry please try again. The word is '+ this.word);
+            document.getElementById('mesg').innerHTML='Sorry, please try again. The word was: '+ this.word;
             this.complete = true;
           }
         }
@@ -138,6 +152,7 @@
       function slide(n) {
         showpict(slideIndex = n);
       }
+	  
       function showpict(n) {
         var i;
         var slides = document.getElementsByClassName("Slider");
@@ -152,7 +167,7 @@
               slides[i].style.display = "none";
           }
       slides[slideIndex-1].style.display = "block";
-}
+	}
 </script>
 </body>
 </html>
